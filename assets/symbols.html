@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="my_body">
+    <style>
+        /* body {
+            height: 300vh;
+        } */
+
+        span {
+            font-size: 100px;
+            float: left;
+        }
+    </style>
+
+    <script>
+        for ( let i = 8986; i <= 129510; i++) {
+
+            if (    (i >= 8988 && i <= 9192)    ||
+                    (i >= 9211 && i <= 9727)    ||
+                    (i >= 10241 && i <= 11087)  ||    
+                    (i >= 11098 && i <= 127024) ||
+                    (i >= 127124 && i <= 127135)||
+                    (i >= 127222 && i <= 127343)||
+                    (i >= 127387 && i <= 127743)||
+                    (i >= 128763 && i <= 129292)||
+                    (i >= 128592 && i <= 128639)||
+                    (i >= 127344 && i <= 127385)    ) {
+
+                continue;
+            }
+
+
+
+            const htmlStr = '<span title="' + i +'">&#' + i + ';</span>'
+            document.getElementById('my_body').insertAdjacentHTML('beforeend', htmlStr);
+        }
+    </script>
+
+</body>
+</html>
