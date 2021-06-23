@@ -8,18 +8,16 @@
 </head>
 <body id="my_body">
     <style>
-        /* body {
-            height: 300vh;
-        } */
-
         span {
             font-size: 100px;
             float: left;
         }
     </style>
 
+
     <script>
-        for ( let i = 8986; i <= 129510; i++) {
+        // CYCLE THROUGH THE INTERESTING "VISUAL" HTML SYMBOLS
+        for ( let i = 8986; i <= 129535; i++) {
 
             if (    (i >= 8988 && i <= 9192)    ||
                     (i >= 9211 && i <= 9727)    ||
@@ -30,9 +28,28 @@
                     (i >= 127387 && i <= 127743)||
                     (i >= 128763 && i <= 129292)||
                     (i >= 128592 && i <= 128639)||
-                    (i >= 127344 && i <= 127385)    ) {
+                    (i >= 127344 && i <= 127385)||
+                    (i >= 128726 && i <= 128735)||
+                    (i >= 128749 && i <= 128751)||
+                    (i >= 129399 && i <= 129401)||
+                    (i >= 129451 && i <= 129453)||
+                    (i >= 10178 && i <= 10225)  ||
+                    (i >= 10073 && i <= 10131)     ) {
 
                 continue;
+            }
+
+
+            if (i == 127151 || i == 127152 ||
+                i == 127168 || i == 127184 ||
+                i == 128335 || i == 128723 ||
+                i == 128724 || i == 129350 ||
+                i == 129394 || i == 129443 ||
+                i == 129444 || i == 129483 ||
+                i == 129484 || i == 10240       ) {
+
+                    continue;
+
             }
 
 
@@ -40,6 +57,10 @@
             const htmlStr = '<span title="' + i +'">&#' + i + ';</span>'
             document.getElementById('my_body').insertAdjacentHTML('beforeend', htmlStr);
         }
+        // ADD EVENT LISTENERS TO EACH SYMBOL
+        const spansWithSymbol = document.getElementsByTagName('span');
+
+        console.log("End of page!");
     </script>
 
 </body>
