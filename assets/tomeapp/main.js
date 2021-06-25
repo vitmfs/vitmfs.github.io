@@ -1848,7 +1848,7 @@ const routes = [
     { path: 'uploadfile', component: _upload_file_upload_file_component__WEBPACK_IMPORTED_MODULE_6__["UploadFileComponent"] },
     { path: 'steplist', component: _step_list_step_list_component__WEBPACK_IMPORTED_MODULE_7__["StepListComponent"] },
     { path: 'notfound', component: _not_found_not_found_component__WEBPACK_IMPORTED_MODULE_8__["NotFoundComponent"] },
-    { path: '', redirectTo: '/books', pathMatch: 'full' },
+    { path: '', redirectTo: '/credentials', pathMatch: 'full' },
     { path: '**', component: _not_found_not_found_component__WEBPACK_IMPORTED_MODULE_8__["NotFoundComponent"] }
 ];
 class AppRoutingModule {
