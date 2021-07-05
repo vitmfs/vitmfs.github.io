@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>🆚 HTML Symbols For Projects</title>
 </head>
 <body id="my_body">
     <style>
@@ -70,5 +70,25 @@
         console.log("End of page!");
     </script>
 
+    <script>
+
+        for ( let i = 129648; i <= 129685; i++) {
+
+            if (i >= 129652 && i <= 129655 ||
+                i >= 129659 && i <= 129663 ||
+                i >= 129667 && i <= 129679      ) {
+
+                    continue;
+
+            }
+            const htmlStr = '<span title="' + i +'">&#' + i + ';</span>'
+            document.getElementById('my_body').insertAdjacentHTML('beforeend', htmlStr);
+
+        }
+
+
+    </script>
+
+    
 </body>
 </html>
