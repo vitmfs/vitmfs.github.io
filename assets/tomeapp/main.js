@@ -856,7 +856,62 @@ const db = {
                 'https://udemy-certificate.s3.amazonaws.com/image/UC-0a1bcf99-abc8-4925-ae23-43c0c9a59a82.jpg',
                 'https://udemy-certificate.s3.amazonaws.com/pdf/UC-0a1bcf99-abc8-4925-ae23-43c0c9a59a82.pdf'
             ]
-        }
+        },
+        {
+            'name': 'HTML, CSS, and Javascript for Web Developers',
+            'hours': 30,
+            'by': 'Coursera',
+            'date': '2021-06-30T00:00:00',
+            'certs': [
+                'https://www.coursera.org/account/accomplishments/verify/A9TGUDQBGCZQ',
+                'https://www.mediafire.com/convkey/f2dd/ssj8hx2qbz9ioq87g.jpg',
+                'https://www.coursera.org/account/accomplishments/certificate/A9TGUDQBGCZQ'
+            ]
+        },
+        {
+            'name': 'Competencias digitales. Herramientas de ofimática (Microsoft Word, Excel, Power Point)',
+            'hours': 45,
+            'by': 'Coursera',
+            'date': '2020-10-16T00:00:00',
+            'certs': [
+                'https://www.coursera.org/account/accomplishments/verify/VDRTQJ5SRMCD',
+                'https://www.mediafire.com/convkey/2842/a9r3or3p2tje36x7g.jpg',
+                'https://www.coursera.org/account/accomplishments/certificate/VDRTQJ5SRMCD'
+            ]
+        },
+        {
+            'name': 'Front-End JavaScript Frameworks: Angular',
+            'hours': 24,
+            'by': 'Coursera',
+            'date': '2021-04-14T00:00:00',
+            'certs': [
+                'https://www.coursera.org/account/accomplishments/verify/3LHVBM3JWU4X',
+                'https://www.mediafire.com/convkey/2f2a/1ggksfwy1pcc5rd4g.jpg',
+                'https://www.coursera.org/account/accomplishments/certificate/3LHVBM3JWU4X'
+            ]
+        },
+        {
+            'name': 'Exploring Emerging Technologies for Lifelong Learning and Success',
+            'hours': 5,
+            'by': 'Coursera',
+            'date': '2020-05-13T00:00:00',
+            'certs': [
+                'https://www.coursera.org/account/accomplishments/verify/TASHM4M2MX5U',
+                'https://www.mediafire.com/convkey/810e/c6y84s0pbdv4hyk4g.jpg',
+                'https://www.coursera.org/account/accomplishments/certificate/TASHM4M2MX5U'
+            ]
+        },
+        {
+            'name': 'IA para todos',
+            'hours': 12,
+            'by': 'Coursera',
+            'date': '2020-10-05T00:00:00',
+            'certs': [
+                'https://www.coursera.org/account/accomplishments/verify/WXDSXGV2PZWC',
+                'https://www.mediafire.com/convkey/c59d/h4jtp8x4y857c794g.jpg',
+                'https://www.coursera.org/account/accomplishments/certificate/WXDSXGV2PZWC'
+            ]
+        },
     ],
     'courses': [
         {
@@ -1848,7 +1903,7 @@ const routes = [
     { path: 'uploadfile', component: _upload_file_upload_file_component__WEBPACK_IMPORTED_MODULE_6__["UploadFileComponent"] },
     { path: 'steplist', component: _step_list_step_list_component__WEBPACK_IMPORTED_MODULE_7__["StepListComponent"] },
     { path: 'notfound', component: _not_found_not_found_component__WEBPACK_IMPORTED_MODULE_8__["NotFoundComponent"] },
-    { path: '', redirectTo: '/credentials', pathMatch: 'full' },
+    // { path: '',   redirectTo: '/credentials', pathMatch: 'full' },
     { path: '**', component: _not_found_not_found_component__WEBPACK_IMPORTED_MODULE_8__["NotFoundComponent"] }
 ];
 class AppRoutingModule {
