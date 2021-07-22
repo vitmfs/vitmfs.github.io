@@ -1,0 +1,605 @@
+{
+  "publication_types": [
+    {
+      "id": "1",
+      "pub_type": "Book"
+    }
+  ],
+  "publications": [
+    {
+      "id": 1,
+      "title": "ASP.NET MVC",
+      "authors": [
+        "Luís Abreu, MVP",
+        "João Paulo Carreiro"
+      ],
+      "npages": 307,
+      "publisher": "FCA",
+      "collection": "My TI",
+      "front": "https://live.staticflickr.com/65535/49512788036_acbec98c54_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512276268_3b92aee42d_k.jpg",
+      "edition": 1,
+      "isbn": "978-972-722-742-6"
+    },
+    {
+      "id": 2,
+      "title": "SQL SERVER 2014 Curso Completo",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512141208_f1a789b153_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512651391_9c224da86f_k.jpg",
+      "edition": 0,
+      "isbn": ""
+    },
+    {
+      "id": 3,
+      "title": "JavaScript & jQuery The Missing Manual",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512902077_6c1f0a5bd8_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512903382_94398b3d20_k.jpg",
+      "edition": 2,
+      "isbn": ""
+    },
+    {
+      "id": 4,
+      "title": "SQL",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512905021_8acfce78cf_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512906326_6b467f5e11_k.jpg",
+      "edition": 0,
+      "isbn": ""
+    },
+    {
+      "id": 5,
+      "title": "ASP.NET 4.5.1",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512272368_97455d3400_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512273723_45e342723b_k.jpg",
+      "edition": 0,
+      "isbn": ""
+    },
+    {
+      "id": 6,
+      "title": "LINGUAGENS WEB",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49513007697_9b77c158ce_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512784326_b2d76567f1_k.jpg",
+      "edition": 0,
+      "isbn": ""
+    },
+    {
+      "id": 7,
+      "title": "Android Profissional",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512428288_21fccddfa5_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512943376_2a066c26cd_k.jpg",
+      "edition": 0,
+      "isbn": ""
+    },
+    {
+      "id": 8,
+      "title": "Android",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49513169432_06c4af9d26_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49513170927_a271b5dd01_k.jpg",
+      "edition": 0,
+      "isbn": ""
+    },
+    {
+      "id": 9,
+      "title": "Desenvolvimento de Aplicações Profissionais em Android",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512934126_09d311419c_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512421518_ecf216d800_k.jpg",
+      "edition": 0,
+      "isbn": ""
+    },
+    {
+      "id": 10,
+      "title": "Android Desenvolvimento de Aplicações em Android Studio",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49513164202_b09b0f48a0_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512426828_803f19b5d0_k.jpg",
+      "edition": 0,
+      "isbn": ""
+    },
+    {
+      "id": 11,
+      "title": "Android Bases de Dados e Geolocalização",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49513161287_d6f19523cc_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49513162942_32b2000384_k.jpg",
+      "edition": 0,
+      "isbn": ""
+    },
+    {
+      "id": 12,
+      "title": "Core Java - Volume I Fundamentals",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512724541_1aee871495_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512725816_cbded5da44_k.jpg",
+      "edition": 10,
+      "isbn": ""
+    },
+    {
+      "title": "Learning ActionScript 3.0",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49513174772_e702aa7ccb_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512951366_2edec5e218_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 13
+    },
+    {
+      "title": "DESENHAR BASES DE DADOS com UML",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512899481_150d5e472c_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49513125742_41c2c0c5d9_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 14
+    },
+    {
+      "title": "INTERNET DAS COISAS INTRODUÇÃO PRÁTICA",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49513119027_088db2471e_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512381868_1803646589_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 15
+    },
+    {
+      "title": "SEGURANÇA da informação",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49513120907_dd0a912225_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512384843_f500389562_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 16
+    },
+    {
+      "title": "LINUX Curso Completo",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512892211_cf09a3a0a3_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512380348_6e0cc7710e_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 17
+    },
+    {
+      "title": "Internet PARA TOTÓS",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512257438_75003a4f14_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512258328_331b6f36fc_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 18
+    },
+    {
+      "title": "O GUIA PRÁTICO DA HTML",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512774931_fd1f93fce0_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512262808_c7f62dc1cb_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 19
+    },
+    {
+      "title": "Produção 3D com Blender",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512767616_df36deca08_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512768501_cb7b5b1f55_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 20
+    },
+    {
+      "title": "GESTÃO de SISTEMAS e REDES em LINUX",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512978062_59512bc476_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512979372_f88f84d631_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 21
+    },
+    {
+      "title": "REDES de COMPUTADORES",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512751166_5169eb5110_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512977227_1a1d436da3_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 22
+    },
+    {
+      "title": "O GUIA PRÁTICO DAS REDES LOCAIS E WIRELESS",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512235888_ce999a7921_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512236703_299da160a5_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 23
+    },
+    {
+      "title": "Segurança em Redes Informáticas",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512965027_d134e662ba_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512966252_052d9a6447_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 24
+    },
+    {
+      "title": "Curso Prático de Java",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512722941_fe8dce9908_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512723731_66fa6fb060_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 25
+    },
+    {
+      "title": "Programming with C#",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512922452_9b17b00498_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512923632_f22a0eb159_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 26
+    },
+    {
+      "title": "O GUIA PRÁTICO DO VISUAL C# 2005 EXPRESS",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512691626_d42161aaec_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512920747_8e75cab780_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 27
+    },
+    {
+      "title": "O GUIA PRÁTICO DO ASP.NET SQL SERVER 2008",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512177933_4f3ec3faea_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512916572_926ef3d08a_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 28
+    },
+    {
+      "title": "Microsoft ASP.NET 3.5 Step by Step",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512168288_f58412a31f_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512680786_c915c3661e_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 29
+    },
+    {
+      "title": "jQuery Mobile",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512159948_cd83c41b76_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512161113_da0d429071_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 30
+    },
+    {
+      "title": "Linguagem C",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512879731_bef61a9ff0_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49513104912_9e1475cf11_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 31
+    },
+    {
+      "title": "Fundamentos de Programação usando C",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512876901_70f72e5df4_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512878636_57c11c0098_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 32
+    },
+    {
+      "title": "Cloud Computing Bible",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49513098092_272ac5ce1a_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49513099172_cc61261d24_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 33
+    },
+    {
+      "title": "Dicionário de Informática e Novas Tecnologias",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512854071_127189dc31_k.jpg",
+      "back": "https://live.staticflickr.com/65535/49512342283_774d2ad773_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 34
+    },
+    {
+      "title": "Tecnologias de Programação de Joos",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512292943_c43d82d9b0_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512293828_fef1deafcb_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 35
+    },
+    {
+      "title": "JavaScript",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512790716_8b55bac62e_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512791811_022cb400c4_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 36
+    },
+    {
+      "title": "Web Services Aplicações Distribuídas sobre Protocolos Internet",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512668716_14d9c15b22_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512670541_92a28a2b9e_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 37
+    },
+    {
+      "title": "Web Design Estrutura concepção e produção de sites Web",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512699491_bacb4e7d99_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512704096_68da4e83e9_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 38
+    },
+    {
+      "title": "ENGENHARIA DE REDES INFORMÁTICAS",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512735211_0ed04afd3c_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512736596_639bbb5d73_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 39
+    },
+    {
+      "title": "Aquitecturas dos Sistemas de Informação",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512744046_ed9d7b1f36_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512745441_99cb12d25e_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 40
+    },
+    {
+      "title": "Técnicas de Programação",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512971707_dc25ba89db_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512972812_6a858cee3c_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 41
+    },
+    {
+      "title": "Criar Websites PARA TOTÓS",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512947376_b896ab1b28_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49513173167_0b0c426d34_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 42
+    },
+    {
+      "title": "TECNOLOGIA de BASES DE DADOS",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512399618_2e892ab35d_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49513139197_dc29573748_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 43
+    },
+    {
+      "title": "SQL",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49513126902_73fa6c2961_z.jpg",
+      "back": "https://live.staticflickr.com/65535/49512390293_d41e2775bb_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 44
+    },
+    {
+      "title": "Head First HTML and CSS ",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/51325467431_f86ae88dc8_z.jpg",
+      "back": "https://live.staticflickr.com/65535/51326461020_6937c94be7_k.jpg",
+      "edition": 0,
+      "isbn": "",
+      "id": 45
+    }
+  ],
+  "publication_copies": [
+    {
+      "id": "1",
+      "pub_id": "1",
+      "state": "Good condition"
+    }
+  ],
+  "new_publications": [
+    {
+      "id": 1,
+      "name": "Todo Item From Angular",
+      "isComplete": false
+    },
+    {
+      "title": "Internet PARA TOTÓS",
+      "authors": [],
+      "npages": 0,
+      "publisher": "",
+      "collection": "",
+      "front": "https://live.staticflickr.com/65535/49512257438_75003a4f14_z.jpg",
+      "back": "",
+      "edition": 0,
+      "isbn": "",
+      "id": 2
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "first_name": "Sebastian",
+      "last_name": "Eschweiler",
+      "email": "sebastian@codingthesmartway.com"
+    },
+    {
+      "id": 2,
+      "first_name": "Steve",
+      "last_name": "Palmer",
+      "email": "steve@codingthesmartway.com"
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    }
+  ]
+}
