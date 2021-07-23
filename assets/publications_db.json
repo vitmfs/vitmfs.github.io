@@ -1,11 +1,4 @@
-{
-  "publication_types": [
-    {
-      "id": "1",
-      "pub_type": "Book"
-    }
-  ],
-  "publications": [
+[
     {
       "id": 1,
       "title": "ASP.NET MVC",
@@ -549,57 +542,4 @@
       "isbn": "",
       "id": 45
     }
-  ],
-  "publication_copies": [
-    {
-      "id": "1",
-      "pub_id": "1",
-      "state": "Good condition"
-    }
-  ],
-  "new_publications": [
-    {
-      "id": 1,
-      "name": "Todo Item From Angular",
-      "isComplete": false
-    },
-    {
-      "title": "Internet PARA TOTÓS",
-      "authors": [],
-      "npages": 0,
-      "publisher": "",
-      "collection": "",
-      "front": "https://live.staticflickr.com/65535/49512257438_75003a4f14_z.jpg",
-      "back": "",
-      "edition": 0,
-      "isbn": "",
-      "id": 2
-    }
-  ],
-  "employees": [
-    {
-      "id": 1,
-      "first_name": "Sebastian",
-      "last_name": "Eschweiler",
-      "email": "sebastian@codingthesmartway.com"
-    },
-    {
-      "id": 2,
-      "first_name": "Steve",
-      "last_name": "Palmer",
-      "email": "steve@codingthesmartway.com"
-    },
-    {
-      "id": 3
-    },
-    {
-      "id": 4
-    },
-    {
-      "id": 5
-    },
-    {
-      "id": 6
-    }
   ]
-}
