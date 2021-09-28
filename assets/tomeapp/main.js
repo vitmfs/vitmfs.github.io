@@ -762,10 +762,10 @@ const db = {
             'name': 'HTML Basic',
             'hours': 1,
             'by': 'W3docs',
-            'date': '2021-05-25T00:00:00',
+            'date': '2021-07-07T00:00:00',
             'certs': [
-                'https://www.w3docs.com/quiz/certificate/3/96.25/1621952890/V%C3%ADtor%20Manuel%20Ferreira%20da%20Silva/9e3f296d007a73bb7fd70086e15d5293?version=2',
-                'https://www.mediafire.com/convkey/149d/7heg42wz8gofjl2zg.jpg',
+                'https://www.w3docs.com/quiz/certificate/3/98.75/1625668332/V%C3%ADtor%20Manuel%20Ferreira%20da%20Silva/a7e71ac7d96e8da93439f392e6c515f0',
+                'https://www.mediafire.com/convkey/4123/uc54uge5tq41zgc7g.jpg',
                 ''
             ]
         },
@@ -910,6 +910,270 @@ const db = {
                 'https://www.coursera.org/account/accomplishments/verify/WXDSXGV2PZWC',
                 'https://www.mediafire.com/convkey/c59d/h4jtp8x4y857c794g.jpg',
                 'https://www.coursera.org/account/accomplishments/certificate/WXDSXGV2PZWC'
+            ]
+        },
+        {
+            'name': 'TECH GIG HTML Beginner Skill Test',
+            'hours': 1,
+            'by': 'TECHGIG',
+            'date': '2021-07-07T00:00:00',
+            'certs': [
+                'https://www.mediafire.com/view/hp8qzc0ekqhg167/certificate_techgig_html.png/file',
+                'https://www.mediafire.com/convkey/0bed/hp8qzc0ekqhg1677g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'Angular + Nest JS course',
+            'hours': 3,
+            'by': 'SoloLearn',
+            'date': '2021-04-23T00:00:00',
+            'certs': [
+                '',
+                'https://www.mediafire.com/convkey/1c37/7ajycufzmwfpiy77g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'C++ Tutorial course',
+            'hours': 3,
+            'by': 'SoloLearn',
+            'date': '2018-03-14T00:00:00',
+            'certs': [
+                '',
+                'https://www.mediafire.com/convkey/8575/d20ctixz78g783o7g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'C# Tutorial course',
+            'hours': 3,
+            'by': 'SoloLearn',
+            'date': '2017-06-13T00:00:00',
+            'certs': [
+                '',
+                'https://www.mediafire.com/convkey/b19a/x3ybj15px5akeyo7g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'C Tutorial course',
+            'hours': 3,
+            'by': 'SoloLearn',
+            'date': '2018-12-22T00:00:00',
+            'certs': [
+                '',
+                'https://www.mediafire.com/convkey/bede/2wsx469diq4neuj7g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'HTML Fundamentals course',
+            'hours': 3,
+            'by': 'SoloLearn',
+            'date': '2017-06-27T00:00:00',
+            'certs': [
+                '',
+                'https://www.mediafire.com/convkey/3e65/jyje553879biezs7g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'JavaScript Tutorial course',
+            'hours': 3,
+            'by': 'SoloLearn',
+            'date': '2017-07-11T00:00:00',
+            'certs': [
+                '',
+                'https://www.mediafire.com/convkey/41f6/nayicltx5azmm5q7g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'Java Tutorial course',
+            'hours': 3,
+            'by': 'SoloLearn',
+            'date': '2017-06-21T00:00:00',
+            'certs': [
+                '',
+                'https://www.mediafire.com/convkey/18cb/mj6q4fu8vvpod0r7g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'PHP Tutorial course',
+            'hours': 3,
+            'by': 'SoloLearn',
+            'date': '2017-07-11T00:00:00',
+            'certs': [
+                '',
+                'https://www.mediafire.com/convkey/139f/7sfpktjykqx8nln7g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'Python 3 Tutorial course',
+            'hours': 3,
+            'by': 'SoloLearn',
+            'date': '2017-10-13T00:00:00',
+            'certs': [
+                '',
+                'https://www.mediafire.com/convkey/4237/fevasd3gw7wxkmq7g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'Ruby Tutorial course',
+            'hours': 3,
+            'by': 'SoloLearn',
+            'date': '2017-10-03T00:00:00',
+            'certs': [
+                '',
+                'https://www.mediafire.com/convkey/5cde/10dx6694dcn82907g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'SQL Fundamentals course',
+            'hours': 3,
+            'by': 'SoloLearn',
+            'date': '2017-07-12T00:00:00',
+            'certs': [
+                '',
+                'https://www.mediafire.com/convkey/2d31/ro4tizu60ijv3xi7g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'jQuery Tutorial course',
+            'hours': 3,
+            'by': 'SoloLearn',
+            'date': '2018-02-07T00:00:00',
+            'certs': [
+                '',
+                'https://www.mediafire.com/convkey/1809/usjgf8hwi94sqk17g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'Responsive Web Design course',
+            'hours': 3,
+            'by': 'SoloLearn',
+            'date': '2021-04-20T00:00:00',
+            'certs': [
+                '',
+                'https://www.mediafire.com/convkey/c613/o8gzkrfe76xkvmb7g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'Coding for Marketers course',
+            'hours': 3,
+            'by': 'SoloLearn',
+            'date': '2021-08-30T00:00:00',
+            'certs': [
+                'https://www.mediafire.com/convkey/1cba/fec6qerhnc7mpo17g.jpg',
+                'https://www.mediafire.com/convkey/1cba/fec6qerhnc7mpo17g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'Front-End Web UI Frameworks and Tools: Bootstrap 4',
+            'hours': 24,
+            'by': 'Coursera',
+            'date': '2021-09-28T00:00:00',
+            'certs': [
+                'https://www.coursera.org/account/accomplishments/verify/99775EBJ9MJN',
+                'https://www.mediafire.com/convkey/1d84/au7sztaa0v2j1x87g.jpg',
+                'https://www.coursera.org/account/accomplishments/certificate/99775EBJ9MJN'
+            ]
+        },
+        {
+            'name': 'Web Service REST APIs - The Complete Guide',
+            'hours': 9.5,
+            'by': 'Udemy',
+            'date': '2021-09-06T00:00:00',
+            'certs': [
+                'https://www.udemy.com/certificate/UC-16841ccb-97d5-49c5-83da-d2bafe04507f/',
+                'https://udemy-certificate.s3.amazonaws.com/image/UC-16841ccb-97d5-49c5-83da-d2bafe04507f.jpg',
+                'https://udemy-certificate.s3.amazonaws.com/pdf/UC-16841ccb-97d5-49c5-83da-d2bafe04507f.pdf'
+            ]
+        },
+        {
+            'name': 'API Engineer: Node | Python | Django | Postman | PostgreSQL',
+            'hours': 5.5,
+            'by': 'Udemy',
+            'date': '2021-09-09T00:00:00',
+            'certs': [
+                'https://www.udemy.com/certificate/UC-a978fdf6-06ab-41a7-a62f-dee54510450b/',
+                'https://udemy-certificate.s3.amazonaws.com/image/UC-a978fdf6-06ab-41a7-a62f-dee54510450b.jpg',
+                'https://udemy-certificate.s3.amazonaws.com/pdf/UC-a978fdf6-06ab-41a7-a62f-dee54510450b.pdf'
+            ]
+        },
+        {
+            'name': '[2021] The Complete Guide to .NET Core (.NET 5) Web API',
+            'hours': 6,
+            'by': 'Udemy',
+            'date': '2021-09-15T00:00:00',
+            'certs': [
+                'https://www.udemy.com/certificate/UC-0f086e86-931f-4d5b-98ca-4343e445d356/',
+                'https://udemy-certificate.s3.amazonaws.com/image/UC-0f086e86-931f-4d5b-98ca-4343e445d356.jpg',
+                'https://udemy-certificate.s3.amazonaws.com/pdf/UC-0f086e86-931f-4d5b-98ca-4343e445d356.pdf'
+            ]
+        },
+        {
+            'name': 'Certification Course in Work & Workforce Management',
+            'hours': 5,
+            'by': 'Udemy',
+            'date': '2021-09-16T00:00:00',
+            'certs': [
+                'https://www.udemy.com/certificate/UC-99619ff3-a393-4d77-bac7-d55f8b3563da/',
+                'https://udemy-certificate.s3.amazonaws.com/image/UC-99619ff3-a393-4d77-bac7-d55f8b3563da.jpg',
+                'https://udemy-certificate.s3.amazonaws.com/pdf/UC-99619ff3-a393-4d77-bac7-d55f8b3563da.pdf'
+            ]
+        },
+        {
+            'name': 'Angular 12, .NET Core Web API & Microsoft SQL full-stack app',
+            'hours': 1,
+            'by': 'Udemy',
+            'date': '2021-09-22T00:00:00',
+            'certs': [
+                'https://www.udemy.com/certificate/UC-2e89096b-9a11-495f-922c-cb47b5477671/',
+                'https://udemy-certificate.s3.amazonaws.com/image/UC-2e89096b-9a11-495f-922c-cb47b5477671.jpg',
+                'https://udemy-certificate.s3.amazonaws.com/pdf/UC-2e89096b-9a11-495f-922c-cb47b5477671.pdf'
+            ]
+        },
+        {
+            'name': 'Learn Basic HTML, CSS & JavaScript (Typescript) with Svelte',
+            'hours': 1,
+            'by': 'Udemy',
+            'date': '2021-08-30T00:00:00',
+            'certs': [
+                'https://www.udemy.com/certificate/UC-36b52255-b6bb-4638-a790-29ca92f6bad1/',
+                'https://udemy-certificate.s3.amazonaws.com/image/UC-36b52255-b6bb-4638-a790-29ca92f6bad1.jpg',
+                'https://udemy-certificate.s3.amazonaws.com/pdf/UC-36b52255-b6bb-4638-a790-29ca92f6bad1.pdf'
+            ]
+        },
+        {
+            'name': 'Swagger API Documentation with Node JS',
+            'hours': 1,
+            'by': 'Udemy',
+            'date': '2021-08-30T00:00:00',
+            'certs': [
+                'https://www.udemy.com/certificate/UC-f36a7e65-676c-41b8-80f7-680b80b943e5/',
+                'https://udemy-certificate.s3.amazonaws.com/image/UC-f36a7e65-676c-41b8-80f7-680b80b943e5.jpg',
+                'https://udemy-certificate.s3.amazonaws.com/pdf/UC-f36a7e65-676c-41b8-80f7-680b80b943e5.pdf'
+            ]
+        },
+        {
+            'name': 'API Crash Course: What is an API, how to create it & test it',
+            'hours': 3.5,
+            'by': 'Udemy',
+            'date': '2021-08-23T00:00:00',
+            'certs': [
+                'https://www.udemy.com/certificate/UC-bc81887e-e765-4ad7-a9b0-4661e692249a/',
+                'https://udemy-certificate.s3.amazonaws.com/image/UC-bc81887e-e765-4ad7-a9b0-4661e692249a.jpg',
+                'https://udemy-certificate.s3.amazonaws.com/pdf/UC-bc81887e-e765-4ad7-a9b0-4661e692249a.pdf'
             ]
         },
     ],
@@ -1959,15 +2223,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function CredentialsComponent_li_15_Template(rf, ctx) { if (rf & 1) {
+function CredentialsComponent_li_17_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "li");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "figure", 6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "div", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "a", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](4, "img", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "figure", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "div", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "a", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](4, "img", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "figcaption", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "figcaption", 11);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](6);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -2058,35 +2322,39 @@ class CredentialsComponent {
     }
 }
 CredentialsComponent.ɵfac = function CredentialsComponent_Factory(t) { return new (t || CredentialsComponent)(); };
-CredentialsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: CredentialsComponent, selectors: [["app-credentials"]], decls: 16, vars: 1, consts: [[1, "text-center", "h3", "text-light"], [1, "d-flex", "flex-justify-center", "flex-wrap", "m-2"], [1, "button", "m-1", 3, "click"], [1, "mif-arrow-down"], ["id", "paintings", "data-role", "list", "data-sort-class", "painting-price", "data-sort-dir", "desc", "data-cls-list", "unstyled-list row flex-justify-center mt-4", "data-cls-list-item", "cell-sm-6 cell-md-4"], [4, "ngFor", "ngForOf"], [1, "text-center"], [1, "img-container", "thumbnail"], ["target", "_blank", 3, "href", "title"], [3, "src", "alt"], [1, "painting-name"]], template: function CredentialsComponent_Template(rf, ctx) { if (rf & 1) {
+CredentialsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: CredentialsComponent, selectors: [["app-credentials"]], decls: 18, vars: 2, consts: [[1, "text-center", "h3", "text-light"], [1, "mif-school"], [1, "d-flex", "flex-justify-center", "flex-wrap", "m-2"], [1, "button", "m-1", 3, "click"], [1, "mif-arrow-down"], ["id", "paintings", "data-role", "list", "data-sort-class", "painting-price", "data-sort-dir", "desc", "data-cls-list", "unstyled-list row flex-justify-center mt-4", "data-cls-list-item", "cell-sm-6 cell-md-4"], [4, "ngFor", "ngForOf"], [1, "text-center"], [1, "img-container", "thumbnail"], ["target", "_blank", 3, "href", "title"], [3, "src", "alt"], [1, "painting-name"]], template: function CredentialsComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "\u00A0");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "p", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](3, "Sort by");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](4, "span", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](5, " training by");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "button", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function CredentialsComponent_Template_button_click_5_listener() { return ctx.sortByDate(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](6, "Date ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](7, "span", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](6, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "button", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function CredentialsComponent_Template_button_click_7_listener() { return ctx.sortByDate(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](8, "Date ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](9, "span", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](8, "button", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function CredentialsComponent_Template_button_click_8_listener() { return ctx.sortByProvider(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](9, "Provider ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](10, "span", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](10, "button", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function CredentialsComponent_Template_button_click_10_listener() { return ctx.sortByProvider(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](11, "Provider ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](12, "span", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](11, "button", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function CredentialsComponent_Template_button_click_11_listener() { return ctx.sortList(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](12, "Duration ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](13, "span", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](13, "button", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function CredentialsComponent_Template_button_click_13_listener() { return ctx.sortList(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](14, "Duration ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](15, "span", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](14, "ul", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](15, CredentialsComponent_li_15_Template, 7, 5, "li", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](16, "ul", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](17, CredentialsComponent_li_17_Template, 7, 5, "li", 6);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("Sort ", ctx.getTotalHours(), " hours of extra ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](14);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx.db.allcourses);
     } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"]], styles: ["p[_ngcontent-%COMP%] {\n  margin-top: 10px;\n}\n\nfigure[_ngcontent-%COMP%]:hover {\n  width: calc(100% + 1px);\n}\n\ndiv.img-container.thumbnail[_ngcontent-%COMP%]:hover {\n  border: 1px solid blue;\n}\n\ndiv[_ngcontent-%COMP%]   [class=cell-md-4][_ngcontent-%COMP%] {\n  padding-left: 35px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXGNyZWRlbnRpYWxzLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZ0JBQUE7QUFDRjs7QUFLQTtFQUNFLHVCQUFBO0FBRkY7O0FBS0E7RUFFRSxzQkFBQTtBQUhGOztBQUtBO0VBQ0Usa0JBQUE7QUFGRiIsImZpbGUiOiJjcmVkZW50aWFscy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbInAge1xyXG4gIG1hcmdpbi10b3A6IDEwcHg7XHJcbn1cclxuXHJcblxyXG5cclxuXHJcbmZpZ3VyZTpob3ZlciB7XHJcbiAgd2lkdGg6IGNhbGMoMTAwJSArIDFweCk7XHJcbn1cclxuXHJcbmRpdi5pbWctY29udGFpbmVyLnRodW1ibmFpbDpob3ZlciB7XHJcbiAgLy8gd2lkdGg6IGNhbGMoMTAwJSArIDVweCk7XHJcbiAgYm9yZGVyOiAxcHggc29saWQgYmx1ZTtcclxufVxyXG5kaXYgW2NsYXNzPVwiY2VsbC1tZC00XCJdIHtcclxuICBwYWRkaW5nLWxlZnQ6IDM1cHg7XHJcbn1cclxuXHJcblxyXG5cclxuXHJcblxyXG4vLyBsaTpob3ZlciBmaWdjYXB0aW9uIHtcclxuLy8gICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjQ4LCAyNDYsIDI0Nik7XHJcbi8vIH1cclxuIl19 */"] });
 
