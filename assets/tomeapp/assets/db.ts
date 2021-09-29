@@ -1107,6 +1107,17 @@ export const db = {
         'https://udemy-certificate.s3.amazonaws.com/pdf/UC-bc81887e-e765-4ad7-a9b0-4661e692249a.pdf'
       ]
     },
+    {
+      'name': 'Formação Pedagógica Inicial de Formadores',
+      'hours': 105,
+      'by': 'Bee Consulting',
+      'date': '2006-09-29T00:00:00',
+      'certs' : [
+        'https://www.mediafire.com/convkey/1e01/sbesyv0v5gwbi857g.jpg',
+        'https://www.mediafire.com/convkey/1e01/sbesyv0v5gwbi857g.jpg',
+        ''
+      ]
+    },
 
 
 

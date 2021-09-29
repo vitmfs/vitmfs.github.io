@@ -1176,6 +1176,17 @@ const db = {
                 'https://udemy-certificate.s3.amazonaws.com/pdf/UC-bc81887e-e765-4ad7-a9b0-4661e692249a.pdf'
             ]
         },
+        {
+            'name': 'Formação Pedagógica Inicial de Formadores',
+            'hours': 105,
+            'by': 'Bee Consulting',
+            'date': '2006-09-29T00:00:00',
+            'certs': [
+                'https://www.mediafire.com/convkey/1e01/sbesyv0v5gwbi857g.jpg',
+                'https://www.mediafire.com/convkey/1e01/sbesyv0v5gwbi857g.jpg',
+                ''
+            ]
+        },
     ],
     'courses': [
         {
@@ -2225,13 +2236,13 @@ __webpack_require__.r(__webpack_exports__);
 
 function CredentialsComponent_li_17_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "li");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "figure", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "div", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "a", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](4, "img", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "figure", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "div", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "a", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](4, "img", 12);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "figcaption", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "figcaption", 13);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](6);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -2241,7 +2252,7 @@ function CredentialsComponent_li_17_Template(rf, ctx) { if (rf & 1) {
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpropertyInterpolate"]("href", ctx_r0.db.allcourses[i_r2].certs[0], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsanitizeUrl"]);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpropertyInterpolate1"]("title", "Credential for ", ctx_r0.db.allcourses[i_r2].name, "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpropertyInterpolate2"]("title", "[", ctx_r0.db.allcourses[i_r2].hours, " hours] ", ctx_r0.db.allcourses[i_r2].name, "");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpropertyInterpolate"]("src", ctx_r0.db.allcourses[i_r2].certs[1], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsanitizeUrl"]);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpropertyInterpolate1"]("alt", "Credential for ", ctx_r0.db.allcourses[i_r2].name, "");
@@ -2322,7 +2333,7 @@ class CredentialsComponent {
     }
 }
 CredentialsComponent.ɵfac = function CredentialsComponent_Factory(t) { return new (t || CredentialsComponent)(); };
-CredentialsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: CredentialsComponent, selectors: [["app-credentials"]], decls: 18, vars: 2, consts: [[1, "text-center", "h3", "text-light"], [1, "mif-school"], [1, "d-flex", "flex-justify-center", "flex-wrap", "m-2"], [1, "button", "m-1", 3, "click"], [1, "mif-arrow-down"], ["id", "paintings", "data-role", "list", "data-sort-class", "painting-price", "data-sort-dir", "desc", "data-cls-list", "unstyled-list row flex-justify-center mt-4", "data-cls-list-item", "cell-sm-6 cell-md-4"], [4, "ngFor", "ngForOf"], [1, "text-center"], [1, "img-container", "thumbnail"], ["target", "_blank", 3, "href", "title"], [3, "src", "alt"], [1, "painting-name"]], template: function CredentialsComponent_Template(rf, ctx) { if (rf & 1) {
+CredentialsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: CredentialsComponent, selectors: [["app-credentials"]], decls: 18, vars: 2, consts: [[1, "text-center", "h3", "text-light"], [1, "mif-school"], [1, "d-flex", "flex-justify-center", "flex-wrap", "m-2"], [1, "button", "m-1", 3, "click"], [1, "mif-calendar"], [1, "mif-library"], [1, "mif-hour-glass"], ["id", "paintings", "data-role", "list", "data-sort-class", "painting-price", "data-sort-dir", "desc", "data-cls-list", "unstyled-list row flex-justify-center mt-4", "data-cls-list-item", "cell-sm-6 cell-md-4"], [4, "ngFor", "ngForOf"], [1, "text-center"], [1, "img-container", "thumbnail"], ["target", "_blank", 3, "href", "title"], [3, "src", "alt"], [1, "painting-name"]], template: function CredentialsComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "\u00A0");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -2340,20 +2351,20 @@ CredentialsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdef
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](10, "button", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function CredentialsComponent_Template_button_click_10_listener() { return ctx.sortByProvider(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](11, "Provider ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](12, "span", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](12, "span", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](13, "button", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function CredentialsComponent_Template_button_click_13_listener() { return ctx.sortList(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](14, "Duration ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](15, "span", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](15, "span", 6);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](16, "ul", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](17, CredentialsComponent_li_17_Template, 7, 5, "li", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](16, "ul", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](17, CredentialsComponent_li_17_Template, 7, 6, "li", 8);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("Sort ", ctx.getTotalHours(), " hours of extra ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("", ctx.getTotalHours(), " hours of extra ");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](14);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx.db.allcourses);
     } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"]], styles: ["p[_ngcontent-%COMP%] {\n  margin-top: 10px;\n}\n\nfigure[_ngcontent-%COMP%]:hover {\n  width: calc(100% + 1px);\n}\n\ndiv.img-container.thumbnail[_ngcontent-%COMP%]:hover {\n  border: 1px solid blue;\n}\n\ndiv[_ngcontent-%COMP%]   [class=cell-md-4][_ngcontent-%COMP%] {\n  padding-left: 35px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXGNyZWRlbnRpYWxzLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZ0JBQUE7QUFDRjs7QUFLQTtFQUNFLHVCQUFBO0FBRkY7O0FBS0E7RUFFRSxzQkFBQTtBQUhGOztBQUtBO0VBQ0Usa0JBQUE7QUFGRiIsImZpbGUiOiJjcmVkZW50aWFscy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbInAge1xyXG4gIG1hcmdpbi10b3A6IDEwcHg7XHJcbn1cclxuXHJcblxyXG5cclxuXHJcbmZpZ3VyZTpob3ZlciB7XHJcbiAgd2lkdGg6IGNhbGMoMTAwJSArIDFweCk7XHJcbn1cclxuXHJcbmRpdi5pbWctY29udGFpbmVyLnRodW1ibmFpbDpob3ZlciB7XHJcbiAgLy8gd2lkdGg6IGNhbGMoMTAwJSArIDVweCk7XHJcbiAgYm9yZGVyOiAxcHggc29saWQgYmx1ZTtcclxufVxyXG5kaXYgW2NsYXNzPVwiY2VsbC1tZC00XCJdIHtcclxuICBwYWRkaW5nLWxlZnQ6IDM1cHg7XHJcbn1cclxuXHJcblxyXG5cclxuXHJcblxyXG4vLyBsaTpob3ZlciBmaWdjYXB0aW9uIHtcclxuLy8gICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjQ4LCAyNDYsIDI0Nik7XHJcbi8vIH1cclxuIl19 */"] });
