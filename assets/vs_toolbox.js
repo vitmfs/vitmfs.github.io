@@ -753,6 +753,13 @@ function innerFunctionDemo() {
     return counter;
 }
 
+function validateDemo() {
+    let x = new Date();
+    if (x !== null && x !== undefined) {
+        console.log(x.toString());
+    }
+}
+
 
 class Car {
     
