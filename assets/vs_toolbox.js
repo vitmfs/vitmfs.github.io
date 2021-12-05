@@ -16,6 +16,7 @@ add();
 const GLOBAL_VARIABLE = "Something";
 
 ////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
 function writeInformation( data ) {
     window.console(arguments.length);
     window.console(writeInformation.toString());
@@ -27,7 +28,10 @@ function writeInformation( data ) {
     window.print();
 }
 ////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
 
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
 function declareVariables() {
     const PI = 3.14;
     const arr = [];
@@ -45,7 +49,7 @@ function declareVariables() {
     var my_string = '';
     let x = 123e5;    // 12300000
     let y = 123e-5;   // 0.00123
-    let x2 = (0.2 * 10 + 0.1 * 10) / 10;
+    let corrected = (0.2 * 10 + 0.1 * 10) / 10;
 
     let person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
     person = null;    // Now value is null, but type is still an object
@@ -58,10 +62,11 @@ function declareVariables() {
     const x5 = [];           // new array object
     const x6 = /()/;         // new regexp object
     const x7 = function(){}; // new function object
-
 }
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
 
-function dateDemo() {
+function datesDemo() {
     const d1 = new Date(2018, 15, 24, 10, 33, 30);
     const d2 = new Date(2019, 3, 24, 10, 33, 30);
 
@@ -87,6 +92,14 @@ function dateDemo() {
     d2.setSeconds();
     d2.setTime();
     
+}
+
+function addZeroToDateStringPart( dateStringPart ) {
+
+    const correctedDateStringPart = 
+    ( dateStringPart.length === 1 ) ? ('0' + dateStringPart) : dateStringPart;
+    
+    return correctedDateStringPart;
 }
 
 function MathDemo() {
@@ -211,7 +224,6 @@ function objectDemo() {
         text += fruit + ": " + value + "";
     }
 
-    const fruits = {Bananas:300, Oranges:200, Apples:500};
     const myMap = new Map(Object.entries(fruits));
 
     let { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };
@@ -227,7 +239,7 @@ function stringsDemo() {
     let str = "Apple, Banana, Kiwi";
     let part = substring(7, 13); // Banana
 
-    let str = "Please visit Microsoft!";
+    let str2 = "Please visit Microsoft!";
     let newStr = text.replace("Microsoft", "W3Schools");
     // CASE INSENSITIVE
     let text = "Please visit Microsoft!";
@@ -265,6 +277,67 @@ function stringsDemo() {
 
     // https://www.w3schools.com/jsref/jsref_obj_string.asp
 }
+
+function stringHasAllUniqueCharacters( str ) {
+    return (new Set(str).size === str.length);
+}
+
+function stringHasAllUniqueCharacters2( str ) {
+    const uniqueCharacters = [];
+    const strLength = str.length;
+    for ( let i = 0; i < strLength; i++ ) {
+        if ( !uniqueCharacters.includes(str[i]) ) {
+            uniqueCharacters.push(str[i]);
+        }
+    }
+    return str.length === uniqueCharacters.length;
+}
+
+function reverseString ( str ) {
+    return str.split('').reverse().join('');
+}
+
+function reverseString2 ( str ) {
+    let reversedString = '';
+    const strLength = str.length;
+    for( let i = strLength -1; i >= 0; i-- ) {
+        reversedString += str[i];
+    }
+
+    return reversedString;
+}
+
+function removeDuplicateCharacters( str ) {
+    return Array.from(new Set(str)).join('');
+}
+
+function stringsAreAnagrams( str1, str2 ) {
+    if (str1.length !== str2.length) {
+        return false;
+    } else {
+        const orderedStringOne = Array.from(str1).sort().join('');
+        const orderedStringTwo = Array.from(str2).sort().join('');
+        return orderedStringOne === orderedStringTwo;
+    }
+}
+
+function replaceCharacterSequenceWith( str, charSeq, replacementSeq ) {
+    return str.replace(charSeq, replacementSeq);
+}
+
+function replaceCharacterWith( str, originalChar, replacementChar ) {
+    let correctedStr = '';
+    const strLength = str.length;
+    for ( let i = 0; i < strLength; i++ ) {
+        if (str[i] === originalChar) {
+            correctedStr += replacementChar;
+        } else {
+            correctedStr += str[i];
+        }
+    }
+    return correctedStr;
+}
+
 
 function regularExpressionsDemo() {
     const myRegex = 
@@ -408,10 +481,75 @@ function arraysDemo() {
     fruits.keys();
     Array.from('ABCDEFG');
 
-    for (const x of [1,2,3,4,5] {
+    for (const x of [1,2,3,4,5] ) {
         // code block to be executed
     }
 
+}
+
+const matrix = [
+    [ 1,  2,  3],
+    [ 4,  5,  6],
+    [ 7,  8,  9],
+    [10, 11, 12]
+]
+
+function rotateMatrix90Degrees( matrix ) {
+    const rotatedMatrix = [];
+    const arrayLength = matrix.length;
+    const innerArrayLength = matrix[0].length;
+
+    for ( let j = 0; j < innerArrayLength; j++) {
+        const innerArray = [];
+        for ( let i = innerArrayLength; i >= 0; i--) {
+            innerArray.push(matrix[i][j]);
+        }
+        rotatedMatrix.push(innerArray);
+    }
+
+    return rotatedMatrix;
+}
+
+const matrix2 = [
+    [ 1,  2,  3],
+    [ 4,  5,  6],
+    [ 7,  8,  0],
+    [10, 11, 12]
+]
+
+function setRowAndColumnOfZeroToAllZeros ( matrix ) {
+    const indexesOfColumns = [];
+
+    const arrayLength = matrix.length;
+    const innerArrayLength = matrix[0].length;
+    for ( let i = 0; i < arrayLength; i++ ) {
+        for ( let j = 0; j < innerArrayLength; j++ ) {
+            if (matrix[i][j] === 0) {
+                if (!indexesOfColumns.includes(j)) {
+                    indexesOfColumns.push(j);
+                }
+            }
+
+        }
+        
+    }
+
+    for ( let i = 0; i < arrayLength; i++ ) {
+        for ( let j = 0; j < innerArrayLength; j++ ) {
+            if (indexesOfColumns.includes(j)) {
+                matrix[i][j] = 0;
+            }
+            if (matrix[i].includes(0)) {
+                matrix[i][j] = 0;
+                
+            }
+
+        }
+        
+    }
+
+    return matrix;
+    
 }
 
 function myFunction(value, index, array) {
@@ -563,14 +701,13 @@ function mapDemo() {
     fruits.entries();
 
     // Create a Map
-    const fruits = new Map([
+    const fruits2 = new Map([
         ["apples", 500],
         ["bananas", 300],
         ["oranges", 200]
     ]);
 
-    // Create a Map
-    const fruits = new Map();
+
 
     // Set Map Values
     fruits.set("apples", 500);
@@ -759,6 +896,8 @@ function validateDemo() {
         console.log(x.toString());
     }
 }
+
+
 
 
 class Car {
