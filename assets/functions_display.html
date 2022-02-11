@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: rgb(27, 255, 7); font-size: 16px">
+    <script>
+        const functionsArray = [];
+
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        function logInformation( data ) {
+            window.console(arguments.length);
+            window.console(writeInformation.toString());
+            window.console.log(data);
+            window.console.debug(data);
+            window.console.error(data);
+            window.document.write(data)
+            window.alert(data);
+            window.print();
+        }
+        functionsArray.push(logInformation);
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        function declareVariables() {
+            const PI = 3.14;
+            const arr = [];
+            const obj = {};
+            const myFunction = function() {
+                console.log('do something');
+            }
+            // If a JavaScript statement does not fit on one line, the best place to break it is after an operator:
+            const myRegex = 
+            /^Ricky|StringThatIWantToFind|AnotherStringThatIWantToFind|SomeW.rd|b[aiu]g|[aeiou]|b[a-z0-9]g|[^ .!@/]|bo+a|go*|P(engu|umpk)in|caboose$/gi; // (g=all; i=ignoreCase)
+            let _privateVariable = '';
+            let myNumber = 0;
+            let $var = 10;
+            globalConstant = true;
+            var my_string = '';
+            let x = 123e5;    // 12300000
+            let y = 123e-5;   // 0.00123
+            let corrected = (0.2 * 10 + 0.1 * 10) / 10;
+
+            let person = {firstName:'John', lastName:'Doe', age:50, eyeColor:'blue'};
+            person = null;    // Now value is null, but type is still an object
+            person = undefined;   // Now both value and type is undefined
+
+            let x1 = '';             // new primitive string
+            let x2 = 0;              // new primitive number
+            let x3 = false;          // new primitive boolean
+            const x4 = {};           // new object
+            const x5 = [];           // new array object
+            const x6 = /()/;         // new regexp object
+            const x7 = function(){}; // new function object
+        }
+        functionsArray.push(declareVariables);
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+
+        function datesDemo() {
+            const d1 = new Date(2018, 15, 24, 10, 33, 30);
+            const d2 = new Date(2019, 3, 24, 10, 33, 30);
+
+            d1.getFullYear();
+            d1.getMonth();
+            d1.getDate();
+            d1.getHours();
+            d1.getMinutes();
+            d1.getSeconds();
+            d1.getMilliseconds();
+            d1.getTime();
+            d1.getDay();
+            d1.toISOString();
+            d1.toJSON();
+            Date.now()
+
+            d2.setDate();
+            d2.setFullYear();
+            d2.setHours();
+            d2.setMilliseconds();
+            d2.setMinutes();
+            d2.setMonth();
+            d2.setSeconds();
+            d2.setTime();
+            
+        }
+        functionsArray.push(datesDemo);
+
+        function addZeroToDateStringPart( dateStringPart ) {
+
+            const correctedDateStringPart = 
+            ( dateStringPart.length === 1 ) ? ('0' + dateStringPart) : dateStringPart;
+            
+            return correctedDateStringPart;
+        }
+        functionsArray.push(addZeroToDateStringPart);
+
+        function MathDemo() {
+            Math.E        // returns Euler's number
+            Math.PI       // returns PI
+            Math.SQRT2    // returns the square root of 2
+            Math.SQRT1_2  // returns the square root of 1/2
+            Math.LN2      // returns the natural logarithm of 2
+            Math.LN10     // returns the natural logarithm of 10
+            Math.LOG2E    // returns base 2 logarithm of E
+            Math.LOG10E   // returns base 10 logarithm of E
+
+            Math.round(15.5);
+            Math.ceil(7.9);
+            Math.floor(18.43);
+            Math.trunc(15.43);
+
+            Math.sign(-4);
+            Math.sign(0);
+            Math.sign(4);
+
+            Math.pow(8, 2);
+            Math.sqrt(64);
+            Math.abs(-4.7);
+            Math.sin(90 * Math.PI / 180);
+            Math.cos(0 * Math.PI / 180);
+            Math.min(0, 150, 30, 20, -8, -200);
+            Math.max(0, 150, 30, 20, -8, -200);
+            Math.random();
+            Math.log(1);
+            Math.log2(8);
+            Math.log10(1000);
+            Math.cbrt(8);
+            // https://www.w3schools.com/js/js_math.asp
+
+        }
+        functionsArray.push(MathDemo);
+
+        function operatorsDemo() {
+            let my_sum = 2 + 2;
+            let my_subtraction = 5 - 2;
+            let my_multiplication = 5 * 2;
+            let my_exponentiation = 5 ** 2 === Math.pow(5,2);
+            let my_division = 10 / 2;
+            let my_modulus = 10 % 3;
+
+            my_sum++;
+            my_sum--;
+
+            ++my_sum;
+            --my_sum;
+
+            my_sum += 1;
+            my_sum -= 1;
+            my_sum *= 1;
+            my_sum /= 1;
+            my_sum %= 1;
+            my_sum **= 1;
+
+            let equalTo = ('5' == 5);
+            let equalValueAndEqualType = (5 === 5);
+            let notEqual = (5 != 2);
+            let notEqualValueOrNotEqualType = ('5' !== 2);
+            let greaterThan = (5 > 2);
+            let lessThan = (2 < 5);
+            let greaterThanOrEqualTo = (5 >= 5);
+            let lessThanOrEqualTo = (2 <= 2);
+            let ternaryOperator = (10 >= 5) ? 'Greater' : 'Lesser';
+
+            let logicalAnd = ((5 === 5) && (2 === 2));
+            let logicalOr = ((5 === 5) || (2 === 2));
+            let logicalNot = !false;
+        }
+        functionsArray.push(operatorsDemo);
+
+        function typeOfAndInstanceOf( obj, type, object_type ) {
+            const correctType = (typeof obj === type);
+            //const correctInstanceOf = (instanceof obj);
+            return (typeof obj === type);
+        }
+        functionsArray.push(typeOfAndInstanceOf);
+
+
+        function propertyOnObject( property, obj ) {
+            return property in obj;
+        }
+        functionsArray.push(propertyOnObject);
+
+        function objectDemo() {
+            const person = {
+                firstName: 'John',
+                lastName : 'Doe',
+                id       : 5566,
+                fullName : function() {
+                return this.firstName + ' ' + this.lastName;
+                }
+            };
+
+            person.id;
+            person['id'];
+            person.nationality = 'English';
+            delete person.id;
+            delete person['id'];
+
+            console.log(person.fullName());
+            console.log(person.fullName);
+
+            // Returns all properties as an array
+            Object.getOwnPropertyNames(person);
+            Object.keys(person);
+            Object.values(person);
+            Object.entries(person);
+            Object.getOwnPropertyNames(person);
+            Object.preventExtensions(person);
+            Object.seal(person);
+            Object.isSealed(person);
+            Object.freeze(person);
+            Object.isFrozen(person);
+
+
+            const fruits = {Bananas:300, Oranges:200, Apples:500};
+
+            let text = '';
+            for (let [fruit, value] of Object.entries(fruits)) {
+                text += fruit + ': ' + value + '';
+            }
+
+            const myMap = new Map(Object.entries(fruits));
+
+            let { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };
+        }
+        functionsArray.push(objectDemo);
+
+
+        function eventsDemo() {
+            // https://www.w3schools.com/jsref/dom_obj_event.asp
+        }
+        functionsArray.push(eventsDemo);
+
+        function stringsDemo() {
+            let txt = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            let length = txt.length;
+            let str = 'Apple, Banana, Kiwi';
+            let part = substring(7, 13); // Banana
+
+            let str2 = 'Please visit Microsoft!';
+            let newStr = text.replace('Microsoft', 'W3Schools');
+            // CASE INSENSITIVE
+            let text = 'Please visit Microsoft!';
+            let newText = text.replace(/MICROSOFT/gi, 'W3Schools');
+
+            let templateLiterals1 = `He's often called 'Johnny ${text}'`;
+            let templateLiterals2 =
+                `The quick
+                brown fox
+                jumps over
+                the lazy dog`;
+
+
+            text.trim();
+            text.toUpperCase();
+            text.toLowerCase();
+            text.padStart(4,0);
+            text.padSEnd(4,0);
+            text.charAt(0);
+            text.charCodeAt(0);
+            text.includes('world');
+            text.startsWith('Hello');
+            text.endsWith('Doe');
+            text.split(' ');
+            str.indexOf('something');
+            str.lastIndexOf('something');
+            str.search('regular_expression');
+
+            let tags = ['template literals', 'javascript', 'es6'];
+            let header = 'Heading 2';
+            let html = `<h2>${header}</h2><ul>`;
+            for (const x of tags) {
+            html += `<li>${x}</li>`;
+            }
+            html += `</ul>`;
+
+            // https://www.w3schools.com/jsref/jsref_obj_string.asp
+
+            let stringToRepeat = 's';
+            stringToRepeat.repeat(3);
+        }
+        functionsArray.push(stringsDemo);
+
+        function stringHasAllUniqueCharacters( str ) {
+            return (new Set(str).size === str.length);
+        }
+        functionsArray.push(stringHasAllUniqueCharacters);
+
+
+        function stringHasAllUniqueCharacters2( str ) {
+            const uniqueCharacters = [];
+            const strLength = str.length;
+            for ( let i = 0; i < strLength; i++ ) {
+                if ( !uniqueCharacters.includes(str[i]) ) {
+                    uniqueCharacters.push(str[i]);
+                }
+            }
+            return str.length === uniqueCharacters.length;
+        }
+        functionsArray.push(stringHasAllUniqueCharacters2);
+
+
+        function reverseString ( str ) {
+            return str.split('').reverse().join('');
+        }
+        functionsArray.push(reverseString);
+
+
+        function reverseString2 ( str ) {
+            let reversedString = '';
+            const strLength = str.length;
+            for( let i = strLength -1; i >= 0; i-- ) {
+                reversedString += str[i];
+            }
+
+            return reversedString;
+        }
+        functionsArray.push(reverseString2);
+
+
+        function removeDuplicateCharacters( str ) {
+            return Array.from(new Set(str)).join('');
+        }
+        functionsArray.push(removeDuplicateCharacters);
+
+
+        function stringsAreAnagrams( str1, str2 ) {
+            if (str1.length !== str2.length) {
+                return false;
+            } else {
+                const orderedStringOne = Array.from(str1).sort().join('');
+                const orderedStringTwo = Array.from(str2).sort().join('');
+                return orderedStringOne === orderedStringTwo;
+            }
+        }
+        functionsArray.push(stringsAreAnagrams);
+
+
+        function replaceCharacterSequenceWith( str, charSeq, replacementSeq ) {
+            return str.replace(charSeq, replacementSeq);
+        }
+        functionsArray.push(replaceCharacterSequenceWith);
+
+
+        function replaceCharacterWith( str, originalChar, replacementChar ) {
+            let correctedStr = '';
+            const strLength = str.length;
+            for ( let i = 0; i < strLength; i++ ) {
+                if (str[i] === originalChar) {
+                    correctedStr += replacementChar;
+                } else {
+                    correctedStr += str[i];
+                }
+            }
+            return correctedStr;
+        }
+        functionsArray.push(replaceCharacterWith);
+
+
+        function translateLetterToNATOAlphabet( letter ) {
+
+            const translationObject = {
+                a: 'Alpha',
+                b: 'Bravo',
+                c: 'Charlie',
+                d: 'Delta',
+                e: 'Echo',
+                f: 'Foxtrot',
+                g: 'Golf',
+                h: 'Hotel',
+                i: 'India',
+                j: 'Juliet',
+                k: 'Kilo',
+                l: 'Lima',
+                m: 'Mike',
+                n: 'November',
+                o: 'Oscar',
+                p: 'Papa',
+                q: 'Quebec	',
+                r: 'Romeo',
+                s: 'Sierra',
+                t: 'Tango',
+                u: 'Uniform',
+                v: 'Victor',
+                w: 'Whiskey',
+                x: 'X-Ray',
+                y: 'Yankee',
+                z: 'Zulu'
+            };
+
+            return translationObject[letter.toLowerCase()];
+        }
+        functionsArray.push(translateLetterToNATOAlphabet);
+
+
+        function regularExpressionsDemo() {
+            const myRegex = 
+            /^Ricky|StringThatIWantToFind|AnotherStringThatIWantToFind|SomeW.rd|b[aiu]g|[aeiou]|b[a-z0-9]g|[^ .!@/]|bo+a|go*|P(engu|umpk)in|caboose$/gi; // (g=all; i=ignoreCase)
+
+            const re = /^([aeiou]).*\1$/; // save the character
+            let regEx = new RegExp('^(Mr|Mrs|Ms|Dr|Er)(\\.)([a-zA-Z])+$');
+            
+            let text = 'The rain in SPAIN stays mainly in the plain';
+            text.match(/ain/gi);
+
+            let n = text.search('W3Schools');
+            text.search(/w3schools/i);
+            text.replace('Microsoft', 'W3Schools');
+            text.replace(/microsoft/i, 'W3Schools');
+
+            const pattern = /e/;
+            pattern.test('The best things in life are free!');
+
+            /e/.test('The best things in life are free!');
+            /e/.exec('The best things in life are free!');
+
+            // Use /()/ instead of new RegExp()
+
+            // https://www.w3schools.com/js/js_regexp.asp
+
+        }
+        functionsArray.push(regularExpressionsDemo);
+
+
+        function infinityDemo() {
+            let myNumber = 2;
+            while (myNumber != Infinity) {
+            myNumber = myNumber * myNumber;
+            }
+            console.log(Infinity);
+            console.log(typeof 2 / 0);
+        }
+        functionsArray.push(infinityDemo);
+
+
+        function convertDecimalsTo() {
+            let myNumber = 32;
+            myNumber.toString(10);
+            myNumber.toString(32);
+            myNumber.toString(16);
+            myNumber.toString(8);
+            myNumber.toString(2);
+        }
+        functionsArray.push(convertDecimalsTo);
+
+
+        function numbersDemo() {
+            const a = Number('111');
+            const b = parseInt('11');
+            const c = parseFloat('0.78');
+            Number(true);
+            Number(false);
+            Number('10');
+            Number('  10');
+            Number('10  ');
+            Number(' 10  ');
+            Number('10.33');
+            Number('10,33');
+            Number('10 33');
+            Number('John');
+            Number.MAX_VALUE;
+            Number.MIN_VALUE;
+            Number.POSITIVE_INFINITY;
+            Number.NEGATIVE_INFINITY;
+            Number.NaN;
+            Number.isNaN(5);
+        }
+        functionsArray.push(numbersDemo);
+
+
+        function randomIntegerBetweenXandY(min, max) {
+            return Math.floor(Math.random() * (max - min) ) + min;
+        }
+        functionsArray.push(randomIntegerBetweenXandY);
+
+
+        function arraysDemo() {
+            const fruits = ['Banana', 'Orange', 'Apple'];
+            Array.isArray(fruits);
+            fruits instanceof Array;
+
+            fruits.join(' * ');
+            fruits.pop();
+            fruits.push('Kiwi');
+            fruits.shift();
+            fruits.unshift('Lemon');
+            fruits[0] = 'Kiwi';
+            fruits.splice(2, 0, 'Lemon', 'Kiwi');
+            fruits.splice(0, 1);
+            fruits.concat([], []);
+            fruits.slice(1);
+            fruits.slice(1, 3);
+            fruits.sort(); // alphabetically
+            fruits.reverse();
+
+            // NUMBERIC SORT/REVERSE
+            const points = [40, 100, 1, 5, 25, 10];
+            points.sort(function(a, b){return a - b});
+            points.sort(function(a, b){return b - a});
+            points.sort((a, b) => a - b);
+
+            // RANDOM ORDER
+            for (let i = points.length -1; i > 0; i--) {
+                let j = Math.floor(Math.random() * i)
+                let k = points[i]
+                points[i] = points[j]
+                points[j] = k
+            }
+
+            // MIN/MAX
+            points.sort(function(a, b){return a - b});
+            const min = points[0];
+            const max = points[points.length-1];
+            Math.max.apply(null, points);
+            Math.min.apply(null, points);
+
+            const cars = [
+                {type:'Volvo', year:2016},
+                {type:'Saab', year:2001},
+                {type:'BMW', year:2010}
+            ];
+            // SORT BY NUMBER
+            cars.sort(function(a, b){return a.year - b.year});
+            // SORT BY STRING
+            cars.sort(function(a, b){
+                let x = a.type.toLowerCase();
+                let y = b.type.toLowerCase();
+                if (x < y) {return -1;}
+                if (x > y) {return 1;}
+                return 0;
+            });
+
+            const numbers = [45, 4, 9, 16, 25];
+            let txt = '';
+            numbers.forEach(myFunction);
+
+            const numbers1 = [45, 4, 9, 16, 25];
+            const numbers2 = numbers1.map(multiplyByTwo);
+            const numbers3 = [45, 4, 9, 16, 25];
+            const over18 = numbers.filter(isOver18);
+            const over18Again = numbers.filter((value, index, array) => {
+                return value > 18;
+            });
+            let sum = numbers.reduce(getSum);
+            numbers.every(isOver18);
+            numbers.some(isOver18);
+            numbers.find(isOver18)
+            numbers.findIndex(isOver18)
+            let position = fruits.indexOf(100) + 1;
+            position = fruits.lastIndexOf(100) + 1;
+            fruits.includes('Mango');
+            fruits.keys();
+            Array.from('ABCDEFG');
+
+            for (const x of [1,2,3,4,5] ) {
+                // code block to be executed
+            }
+
+        }
+        functionsArray.push(arraysDemo);
+
+
+        function getArrayInformationObject( arrayToReview ) {
+            const obj = {};
+            for (let each of arrayToReview) {
+                if (obj[each] == undefined) {
+                    obj[each] = 1;
+                } else {
+                    obj[each]++
+                }
+            }
+            return obj;
+        }
+        functionsArray.push(getArrayInformationObject);
+
+
+        function getUniquesFromNumbersArray( nums ) {
+            const sortedArray = nums.sort((a, b) => a - b);
+            const sortedNumbersSet = new Set(sortedArray);
+            return Array.from(sortedNumbersSet)
+        }
+        functionsArray.push(getUniquesFromNumbersArray);
+
+
+        function arrayRotateLeft( myArray, numberOfTicks ) {
+            const rotatedArray = myArray;
+            for ( let i = 1; i <= numberOfTicks; i++) {
+                rotatedArray.push(myArray.shift());
+            }
+            
+            console.log(rotatedArray);
+            return rotatedArray;
+
+        }
+        functionsArray.push(arrayRotateLeft);
+
+
+        function arrayRotateRight( myArray, numberOfTicks ) {
+            const rotatedArray = myArray;
+            for ( let i = 1; i <= numberOfTicks; i++) {
+                rotatedArray.unshift(myArray.pop());
+            }
+            
+            console.log(rotatedArray);
+            return rotatedArray;
+        }
+        functionsArray.push(arrayRotateRight);
+
+        const matrix = [
+            [ 1,  2,  3],
+            [ 4,  5,  6],
+            [ 7,  8,  9],
+            [10, 11, 12]
+        ]
+
+        function rotateMatrix90Degrees( matrix ) {
+            const rotatedMatrix = [];
+            const arrayLength = matrix.length;
+            const innerArrayLength = matrix[0].length;
+
+            for ( let j = 0; j < innerArrayLength; j++) {
+                const innerArray = [];
+                for ( let i = innerArrayLength; i >= 0; i--) {
+                    innerArray.push(matrix[i][j]);
+                }
+                rotatedMatrix.push(innerArray);
+            }
+
+            return rotatedMatrix;
+        }
+        functionsArray.push(rotateMatrix90Degrees);
+
+
+        const matrix2 = [
+            [ 1,  2,  3],
+            [ 4,  5,  6],
+            [ 7,  8,  0],
+            [10, 11, 12]
+        ]
+
+        function setRowAndColumnOfZeroToAllZeros ( matrix ) {
+            const indexesOfColumns = [];
+
+            const arrayLength = matrix.length;
+            const innerArrayLength = matrix[0].length;
+            for ( let i = 0; i < arrayLength; i++ ) {
+                for ( let j = 0; j < innerArrayLength; j++ ) {
+                    if (matrix[i][j] === 0) {
+                        if (!indexesOfColumns.includes(j)) {
+                            indexesOfColumns.push(j);
+                        }
+                    }
+
+                }
+                
+            }
+
+            for ( let i = 0; i < arrayLength; i++ ) {
+                for ( let j = 0; j < innerArrayLength; j++ ) {
+                    if (indexesOfColumns.includes(j)) {
+                        matrix[i][j] = 0;
+                    }
+                    if (matrix[i].includes(0)) {
+                        matrix[i][j] = 0;
+                        
+                    }
+
+                }
+                
+            }
+
+            return matrix;
+            
+        }
+        functionsArray.push(setRowAndColumnOfZeroToAllZeros);
+
+
+        function myFunction(value, index, array) {
+            txt += value + '<br>';
+        }
+        functionsArray.push(myFunction);
+
+
+        function multiplyByTwo(value, index, array) {
+            return value * 2;
+        }
+        functionsArray.push(multiplyByTwo);
+
+
+        function isOver18(value, index, array) {
+            return value > 18;
+        }
+        functionsArray.push(isOver18);
+
+
+        function getSum(total, value, index, array) {
+            return total + value;
+        }
+        functionsArray.push(getSum);
+
+
+        function getSum2(total, value) {
+            return total + value;
+        }
+        functionsArray.push(getSum2);
+
+
+        function comparisons() {
+            // https://www.w3schools.com/js/js_comparisons.asp
+            let time = 11;
+            if (time < 10) {
+                greeting = 'Good morning';
+            } else if (time < 20) {
+            greeting = 'Good day';
+            } else {
+            greeting = 'Good evening';
+            }
+
+            switch (new Date().getDay()) {
+                case 0:
+                    day = 'Sunday';
+                    break;
+                case 1:
+                    day = 'Monday';
+                    break;
+                case 2:
+                    day = 'Tuesday';
+                    break;
+                case 3:
+                    day = 'Wednesday';
+                    break;
+                case 4:
+                    day = 'Thursday';
+                    break;
+                case 5:
+                    day = 'Friday';
+                    break;
+                case 6:
+                    day = 'Saturday';
+                    break;
+                default:
+                    day = 'Undefined';
+                    break;
+            }
+        }
+        functionsArray.push(comparisons);
+
+
+        function loopsDemo() {
+            let cars = ['Volvo', 'Renault', 'Mitsubishi'];
+            for (let i = 0; i < cars.length; i++) {
+                if (i === 3) { 
+                    continue;
+                }
+
+                if (i === 8) { 
+                    break;
+                }
+                console.log(cars[i]);
+            }
+
+            for (let x of cars) {
+                text += x;
+            }
+
+            const letters = new Set(['a','b','c', 'c']);
+
+            for (const x of letters) {
+            // code block to be executed
+            }
+
+            let language = 'JavaScript';
+
+            let text = '';
+            for (let x of language) {
+                text += x;
+            }
+
+            const person = {
+                fname:'John', 
+                lname:'Doe', age:25
+            };
+
+            for (let x in person) {
+                text += person[x];
+            }
+
+            let i = 0;
+            while (i < 10) {
+                text += 'The number is ' + i;
+                i++;
+            }
+
+            i = 0;
+            do {
+                text += 'The number is ' + i;
+                i++;
+            }
+            while (i < 10);
+        }
+        functionsArray.push(loopsDemo);
+
+
+        function setDemo() {
+            const letters = new Set(['a','b','c','c']);
+            letters.add('d');
+            letters.delete('a');
+            letters.has('a');
+            letters.values();
+            letters.size;
+
+            Array.from(letters);
+        }
+        functionsArray.push(setDemo);
+
+
+        function mapDemo() {
+            // A Map holds key-value pairs where the keys can be any datatype.
+            // A Map remembers the original insertion order of the keys.
+            // A Map has a property that represents the size of the map.
+
+            // Create a Map
+            const fruits = new Map();
+
+            // Set Map Values
+            fruits.set('apples', 500);
+            fruits.set('bananas', 300);
+            fruits.set('oranges', 200);
+
+            fruits.get('apples');
+            fruits.size;
+            fruits.delete('apples');
+            fruits.has('apples');
+            fruits.entries();
+
+            // Create a Map
+            const fruits2 = new Map([
+                ['apples', 500],
+                ['bananas', 300],
+                ['oranges', 200]
+            ]);
+
+
+
+            // Set Map Values
+            fruits.set('apples', 500);
+            fruits.set('bananas', 300);
+            fruits.set('oranges', 200);
+            fruits.set('apples', 500);
+
+            fruits.get('apples');    // Returns 500
+            fruits.size;
+            fruits.delete('apples');
+            fruits.clear();
+
+            typeof fruits;
+            fruits instanceof Map;
+
+            // Object	Map
+            // Iterable	Not directly iterable	Directly iterable
+            // Size	Do not have a size property	Have a size property
+            // Key Types	Keys must be Strings (or Symbols)	Keys can be any datatype
+            // Key Order	Keys are not well ordered	Keys are ordered by insertion
+            // Defaults	Have default keys	Do not have default keys
+            fruits.entries();
+            fruits.keys();
+            fruits.values();
+
+            // Create Objects
+            const apples = {name: 'Apples'};
+            const bananas = {name: 'Bananas'};
+            const oranges = {name: 'Oranges'};
+
+            // Create a Map
+            const fruitObjects = new Map();
+
+            // Add new Elements to the Map
+            fruitObjects.set(apples, 500);
+            fruitObjects.set(bananas, 300);
+            fruitObjects.set(oranges, 200);
+
+        }
+        functionsArray.push(mapDemo);
+
+
+        function dataTypes() {
+            // https://www.w3schools.com/js/js_typeof.asp
+            typeof 'John'                 // Returns 'string'
+            typeof 3.14                   // Returns 'number'
+            typeof NaN                    // Returns 'number'
+            typeof false                  // Returns 'boolean'
+            typeof [1,2,3,4]              // Returns 'object'
+            typeof {name:'John', age:34}  // Returns 'object'
+            typeof new Date()             // Returns 'object'
+            typeof function () {}         // Returns 'function'
+            typeof myCar                  // Returns 'undefined' *
+            typeof null                   // Returns 'object'
+            typeof {name:'John', age:34} // Returns 'object'
+            typeof [1,2,3,4]             // Returns 'object' (not 'array', see note below)
+            typeof null                  // Returns 'object'
+            typeof function myFunc(){}   // Returns 'function'
+            /*
+            The data type of NaN is number
+            The data type of an array is object
+            The data type of a date is object
+            The data type of null is object
+            The data type of an undefined variable is undefined *
+            The data type of a variable that has not been assigned a value is also undefined
+            */
+            'John'.constructor                // Returns function String()  {[native code]}
+            (3.14).constructor                // Returns function Number()  {[native code]}
+            false.constructor                 // Returns function Boolean() {[native code]}
+            [1,2,3,4].constructor             // Returns function Array()   {[native code]}
+
+            new Date().constructor            // Returns function Date()    {[native code]}
+
+            typeof undefined           // undefined
+            typeof null                // object
+
+            null === undefined         // false
+            null == undefined          // true
+
+        }
+        functionsArray.push(dataTypes);
+
+
+        function isArray(myArray) {
+            return myArray.constructor === Array;
+        }
+        functionsArray.push(isArray);
+
+
+        function tryCatchDemo() {
+            try {
+                // Block of code to try
+            }
+            catch(err) {
+                // Block of code to handle errors
+                throw 'Too big';    // throw a text
+                throw 500;    
+                throw false;     
+                throw {};   
+            }
+            finally {
+                // Block of code to be executed regardless of the try / catch result
+            }
+
+            let x = 'Some input';
+            try {
+                if(x == '') throw 'empty';
+                if(isNaN(x)) throw 'not a number';
+                x = Number(x);
+                if(x < 5) throw 'too low';
+                if(x > 10) throw 'too high';
+            }
+            catch(err) {
+                console.log(err.message + error.name);
+            }
+
+            // https://www.w3schools.com/js/js_errors.asp
+        }
+        functionsArray.push(tryCatchDemo);
+
+        function thisDemo() {
+            // https://www.w3schools.com/js/js_this.asp
+            // In regular functions the this keyword represented the object that called the function, which could be the window, the document, a button or whatever.
+            // With arrow functions the this keyword always represents the object that defined the arrow function.
+        }
+        functionsArray.push(thisDemo);
+
+        const hello = val => 'Hello ' + val;
+
+        const arrowFunction1 = (a, b = 2) => a * b;
+
+        const arrowFunction2 = () => {
+            return 0;
+        };
+
+        const arrowFunction3 = function() {
+            return 'Hello World!';
+        }
+
+        function jsonDemo() {
+            const obj = JSON.parse('{ name:"Helios", lastName:"Sunny"}');
+            const str = JSON.stringify(obj);
+
+            const arr = ['John', 'Peter', 'Sally', 'Jane'];
+            let myString = JSON.stringify(arr);
+        }
+        functionsArray.push(jsonDemo);
+
+
+        function numberDemo() {
+            Number.MIN_SAFE_INTEGER;
+            Number.MAX_SAFE_INTEGER;
+            Number.isInteger(10);        // returns true
+            Number.isInteger(10.5);      // returns false
+            Number.isSafeInteger(10);    // returns true
+            Number.isSafeInteger(12345678901234567890);  // returns false
+            Number.isFinite(10/0);       // returns false
+            Number.isFinite(10/1);       // returns true
+            Number.isNaN('Hello');       // returns true
+        }
+        functionsArray.push(numberDemo);
+
+
+        function promiseDemos() {
+            let myPromise = new Promise();
+            myPromise.then();
+            myPromise.catch();
+            myPromise.finally();
+        }
+        functionsArray.push(promiseDemos);
+
+
+        function primitivesDemo() {
+
+            // string
+            // number
+            // boolean
+            // null
+            // undefined
+        }
+        functionsArray.push(primitivesDemo);
+
+
+        function innerFunctionDemo() {
+            let counter = 0;
+            function plus() {counter += 1;}
+            plus();   
+            return counter;
+        }
+        functionsArray.push(innerFunctionDemo);
+
+
+        function validateDemo() {
+            let x = new Date();
+            if (x !== null && x !== undefined) {
+                console.log(x.toString());
+            }
+        }
+        functionsArray.push(validateDemo);
+
+
+        function isSubstring( fullstring, partOfString ) {
+            return fullstring.indexOf(partOfString) >= 0;
+        }
+        functionsArray.push(isSubstring);
+
+
+        function string2IsRotationOfString1( string1, string2 ) {
+            const doubleString = string1 + string1;
+            return isSubstring( doubleString, string2);
+        }
+        functionsArray.push(string2IsRotationOfString1);
+
+
+        function sumOfLargestContinuousSequence( arrayToAnalyze ) {
+            let max = Number.NEGATIVE_INFINITY;
+            const lengthOfArray = arrayToAnalyze.length;
+
+
+            for (let i = 0; i < lengthOfArray - 2; i++ ) {
+
+                const sumOfContinuousSequence = 
+                arrayToAnalyze[i] + arrayToAnalyze[i+1] + arrayToAnalyze[i+2];
+
+                if ( sumOfContinuousSequence >= max ) {
+                    max = sumOfContinuousSequence;
+                }
+            }
+
+            return max;
+
+            // const myArray = [2, -8, 3, -2, 4, -10];
+            // console.log(sumOfLargestContinuousSequence(myArray));
+        }
+        functionsArray.push(sumOfLargestContinuousSequence);
+        
+        
+        // export 
+        function demo() {
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+            console.log('Something');
+        }
+
+        function demo2(){
+            console.log('Somethidddng');
+            const x = () => {
+                // hello
+            };
+        }
+
+        const demo3 = function( data ) {
+            console.log(data.toString());
+        }
+
+        const demo4 = (x) => x**2;
+
+        document.write('<p id="x"></p>');
+
+
+
+        
+        functionsArray.push(demo);
+        functionsArray.push(demo2);
+        functionsArray.push(demo3);
+        functionsArray.push(demo4);
+        let functionsString = '';
+        let index = 0;
+        for (let aFunction of functionsArray) {
+            functionsString += `<pre id=${index}><code>` +aFunction + '</code></pre>' + '<br/>';
+            index++;
+        }
+
+        document.write(functionsString);
+    </script>
+    <!-- <p id='x'></p> -->
+    <script>
+        //document.write('Something else');
+
+        const arrayOfStrings = [
+            'The Matrix has you.....',
+            'Wake up Neo...'
+
+        ];
+
+        const theMatrixHasYou = 'The Matrix has you.....';
+        let i = 0;
+
+        setInterval(function () {
+            
+            document.getElementById('x').innerHTML += arrayOfStrings[0][i];
+
+            if( i < arrayOfStrings[0].length) {
+                i++;
+            }
+
+            if( i === arrayOfStrings[0].length-1) {
+                i = 0;
+                document.getElementById('x').innerHTML = '<span style="color: black">a</span>';
+            }
+            
+            
+
+            
+        }, 150);
+
+    </script>
+
+</body>
+</html>
