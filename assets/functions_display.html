@@ -1136,31 +1136,38 @@
         //document.write('Something else');
 
         const arrayOfStrings = [
+            'Wake up, Neo.....',
             'The Matrix has you.....',
-            'Wake up Neo...'
-
+            'Follow the white rabbit...',
+            'Knock, knock, Neo...'
+            
         ];
 
         const theMatrixHasYou = 'The Matrix has you.....';
         let i = 0;
+        let indexOfPhrase = 0;
 
         setInterval(function () {
             
-            document.getElementById('x').innerHTML += arrayOfStrings[0][i];
+            document.getElementById('x').innerHTML += arrayOfStrings[indexOfPhrase][i];
 
-            if( i < arrayOfStrings[0].length) {
+            if( i < arrayOfStrings[indexOfPhrase].length) {
                 i++;
             }
 
-            if( i === arrayOfStrings[0].length-1) {
+            if( i === arrayOfStrings[indexOfPhrase].length-1) {
                 i = 0;
                 document.getElementById('x').innerHTML = '<span style="color: black">a</span>';
+                indexOfPhrase++;
+                if (indexOfPhrase === arrayOfStrings.length - 1) {
+                    indexOfPhrase = 0;
+                }
             }
             
             
 
             
-        }, 150);
+        }, 250);
 
     </script>
 
