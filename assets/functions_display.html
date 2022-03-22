@@ -1187,6 +1187,52 @@
             return word.split('').sort(() => Math.random() - 0.5).join('');
         }
 
+        // pain
+        function randomFirstDegreeEquation(maxNumberOfTerms, maxTermValue, charRepresentingVariable) {
+
+            function randomIntegerBetweenXandY(min, max) {
+                return Math.floor(Math.random() * (max - min) ) + min;
+            }
+
+            function makeTerm(charRepresentingVariable, maxTermValue) {
+                 let term = randomIntegerBetweenXandY(1, maxTermValue);
+                 term = (term === 1) ? '' : term;
+                 term += (Math.random() > 0.5) ? charRepresentingVariable : '';
+                 // console.log(term);
+
+                 return term;
+            }
+
+            function plusOrMinus() {
+                const plusOrMinus = (Math.random() < 0.5) ? '-' : '+';
+                // console.log(plusOrMinus);
+                return plusOrMinus;
+            }
+
+            function makeSideOfEquation(maxNumberOfTerms, charRepresentingVariable, maxTermValue) {
+                const numberOfTerms = randomIntegerBetweenXandY(1, maxNumberOfTerms);
+                let sideOfEquationString = '';
+                for (let i = 0; i < numberOfTerms; i++) {
+                    sideOfEquationString += 
+                        makeTerm(charRepresentingVariable, maxTermValue);
+                    if ( i !== (numberOfTerms-1)) {
+                        sideOfEquationString += plusOrMinus();
+                    }
+
+                }
+                // console.log('Side Of Equation: ');
+                return sideOfEquationString;
+
+            }
+
+            const ramdomEquation = makeSideOfEquation(maxNumberOfTerms, charRepresentingVariable, maxTermValue) + ' = '
+                + makeSideOfEquation(maxNumberOfTerms, charRepresentingVariable, maxTermValue);
+
+            // console.log('Complete: ' + ramdomEquation);
+            return ramdomEquation;
+
+        }
+
         
         
         
@@ -1217,10 +1263,10 @@
         //document.write('Something else');
 
         const arrayOfStrings = [
-            'Wake up, Neo.....',
-            'The Matrix has you.....',
-            'Follow the white rabbit...',
-            'Knock, knock, Neo...'
+            'Wake up, Neo...          ',
+            'The Matrix has you...          ',
+            'Follow the white rabbit.         ',
+            'Knock, knock, Neo.         '
             
         ];
 
