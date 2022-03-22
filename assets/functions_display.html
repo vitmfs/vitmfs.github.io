@@ -1106,6 +1106,87 @@
             // console.log(sumOfLargestContinuousSequence(myArray));
         }
         functionsArray.push(sumOfLargestContinuousSequence);
+
+
+        function fetchAPIDemo() {
+            const url = 'https://jsonplaceholder.typicode.com/todos/1';
+            fetch(url)
+                .then( res => {
+                    return res.json();
+                })
+                .then( data => {
+                    console.log(data)
+                })
+                .catch( error => {
+                    console.log(error);
+                });
+        }
+        functionsArray.push(fetchAPIDemo);
+
+        
+        async function asyncAwaitDemo() { // const asyncAwaitDemo = async () => {
+
+            try {
+                const url = 'https://jsonplaceholder.typicode.com/todos/1';
+                const res = await fetch(url);
+                console.log(res.status);
+                console.log(res.ok);
+                const data = await res.json();
+                console.log(data);
+                return data; // const data = asyncAwaitDemo().then( data => console.log(data));
+            } catch (err) {
+                console.error(err);
+            }
+            
+        }
+        functionsArray.push(asyncAwaitDemo);
+
+        async function promiseAllDemos() {
+            const url1 = 'https://jsonplaceholder.typicode.com/todos/1';
+            const url2 = 'https://jsonplaceholder.typicode.com/todos/2';
+            const url3 = 'https://jsonplaceholder.typicode.com/todos/3';
+
+            const results = await Promise.all([
+                fetch(url1),
+                fetch(url2),
+                fetch(url3)
+            ]);
+
+            const dataPromisses = results.map(result => result.json());
+            const finalData = await Promise.all(dataPromisses);
+            console.log(finalData);
+
+        }
+        functionsArray.push(promiseAllDemos);
+
+        function letterToNumbers( word ) {
+            const lettersToReplace      = 'AEIOST';
+            const correspondingNumbers  = '431057';
+
+            const wordInUpperCase = word.toUpperCase();
+            console.log(wordInUpperCase);
+
+            let changedWord = '';
+            wordInUpperCase.split('').forEach( (letter) => {
+                if (lettersToReplace.includes(letter)) {
+                    changedWord += correspondingNumbers[lettersToReplace.indexOf(letter)];
+                } else {
+                    changedWord += letter;
+                }
+            });
+
+            return changedWord;
+
+        }
+
+        function shuffleArray( arr ) {
+            return arr.sort(() => Math.random() - 0.5);
+        }
+
+        function shuffleWord( word ) {
+            return word.split('').sort(() => Math.random() - 0.5).join('');
+        }
+
         
         
         
@@ -1163,10 +1244,7 @@
                     indexOfPhrase = 0;
                 }
             }
-            
-            
 
-            
         }, 250);
 
     </script>
