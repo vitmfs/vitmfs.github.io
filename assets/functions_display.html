@@ -1233,6 +1233,66 @@
 
         }
 
+        function retroCellphoneEncription( stringToEncript ) {
+            console.log(' ________________');
+            console.log('|                |');
+            console.log('|                |');
+            console.log('|                |');
+            console.log('|                |');
+            console.log('|                |');
+            console.log('|                |');
+            console.log('|                |');
+            console.log(' ________________ ');
+            console.log('|1    |2abc|3def |');
+            console.log('|4ghi |5jkl|6mno |');
+            console.log('|7pqrs|8tuv|9wxyz|');
+            console.log('|*    |0   |#    |');
+            console.log('__________________');
+
+            const letters = 'abcdefghijklmnopqrstuvwxyz ';
+
+            const abc2  = '2abc';
+            const def3  = '3def';
+            const ghi4  = '4ghi';
+            const jkl5  = '5jkl';
+            const mno6  = '6mno';
+            const pqrs7 = '7pqrs';
+            const tuv8  = '8tuv';
+            const wxyz9 = '9wxyz';
+            const _0    = '0 ';
+
+            let encriptedString = '';
+
+            stringToEncript.split('').forEach( (char) => {
+                char = char.toLowerCase();
+                let key = ''
+                let numberOfKeyPresses = 0;
+                if ( letters.includes(char) ) {
+                    if (abc2.includes(char) ) { key = abc2[0]; numberOfKeyPresses = abc2.indexOf(char) }
+                    if (def3.includes(char) ) { key = def3[0]; numberOfKeyPresses = def3.indexOf(char) }
+                    if (ghi4.includes(char) ) { key = ghi4[0]; numberOfKeyPresses = ghi4.indexOf(char) }
+                    if (jkl5.includes(char) ) { key = jkl5[0]; numberOfKeyPresses = jkl5.indexOf(char) }
+                    if (mno6.includes(char) ) { key = mno6[0]; numberOfKeyPresses = mno6.indexOf(char) }
+                    if (pqrs7.includes(char)) { key = pqrs7[0]; numberOfKeyPresses = pqrs7.indexOf(char) }
+                    if (tuv8.includes(char) ) { key = tuv8[0]; numberOfKeyPresses = tuv8.indexOf(char) }
+                    if (wxyz9.includes(char)) { key = wxyz9[0]; numberOfKeyPresses = wxyz9.indexOf(char) }
+                    if (_0.includes(char)   ) { key = _0[0]; numberOfKeyPresses = _0.indexOf(char) }
+                }
+                
+
+                for (let i = 1; i <= numberOfKeyPresses; i++) {
+                    encriptedString += key
+                }
+
+                encriptedString += '-';
+
+            });
+            encriptedString = encriptedString.substring(0, encriptedString.length-1);
+
+            return encriptedString;
+
+        }
+
         
         
         
