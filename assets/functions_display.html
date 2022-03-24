@@ -1178,14 +1178,17 @@
             return changedWord;
 
         }
+        functionsArray.push(letterToNumbers);
 
         function shuffleArray( arr ) {
             return arr.sort(() => Math.random() - 0.5);
         }
+        functionsArray.push(shuffleArray);
 
         function shuffleWord( word ) {
             return word.split('').sort(() => Math.random() - 0.5).join('');
         }
+        functionsArray.push(shuffleWord);
 
         // pain
         function randomFirstDegreeEquation(maxNumberOfTerms, maxTermValue, charRepresentingVariable) {
@@ -1232,6 +1235,9 @@
             return ramdomEquation;
 
         }
+        functionsArray.push(randomFirstDegreeEquation);
+
+
 
         function retroCellphoneEncription( stringToEncript ) {
             console.log(' ________________');
@@ -1292,6 +1298,7 @@
             return encriptedString;
 
         }
+        functionsArray.push(retroCellphoneEncription);
 
         
         
