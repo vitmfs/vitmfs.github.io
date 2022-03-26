@@ -1268,7 +1268,7 @@
             const _0    = '0 ';
 
             let encriptedString = '';
-
+            
             stringToEncript.split('').forEach( (char) => {
                 char = char.toLowerCase();
                 let key = ''
@@ -1282,7 +1282,6 @@
                     if (pqrs7.includes(char)) { key = pqrs7[0]; numberOfKeyPresses = pqrs7.indexOf(char) }
                     if (tuv8.includes(char) ) { key = tuv8[0]; numberOfKeyPresses = tuv8.indexOf(char) }
                     if (wxyz9.includes(char)) { key = wxyz9[0]; numberOfKeyPresses = wxyz9.indexOf(char) }
-                    if (_0.includes(char)   ) { key = _0[0]; numberOfKeyPresses = _0.indexOf(char) }
                 }
                 
 
@@ -1290,10 +1289,20 @@
                     encriptedString += key
                 }
 
-                encriptedString += '-';
+                if (char !== ' ') {
+                    encriptedString += '-';
+                } else {
+                    encriptedString = encriptedString.substring(0, encriptedString.length-1);
+                    encriptedString += ' ';
+                }
+                
 
             });
             encriptedString = encriptedString.substring(0, encriptedString.length-1);
+            encriptedString.split(' ').forEach( (word) => {
+                console.log(word);
+            });
+    
 
             return encriptedString;
 
