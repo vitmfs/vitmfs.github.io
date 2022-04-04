@@ -786,7 +786,7 @@ const db = {
             'by': 'SoloLearn',
             'date': '2021-05-25T00:00:00',
             'certs': [
-                'https://www.sololearn.com/Certificate/1023-5041222/jpg',
+                'https://www.mediafire.com/convkey/9312/x17u9x7bjkr5i6q7g.jpg',
                 'https://www.sololearn.com/Certificate/1023-5041222/jpg',
                 'https://www.sololearn.com/Certificate/1023-5041222/pdf'
             ]
@@ -1185,6 +1185,270 @@ const db = {
                 'https://www.mediafire.com/convkey/1e01/sbesyv0v5gwbi857g.jpg',
                 'https://www.mediafire.com/convkey/1e01/sbesyv0v5gwbi857g.jpg',
                 ''
+            ]
+        },
+        {
+            'name': 'How Well Do You Know Angular',
+            'hours': 1,
+            'by': 'ProProfs',
+            'date': '2021-04-16T00:00:00',
+            'certs': [
+                'https://www.mediafire.com/convkey/139f/gi81m94itqckhvn7g.jpg',
+                'https://www.mediafire.com/convkey/139f/gi81m94itqckhvn7g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'Computer Fundamentals 101',
+            'hours': 1,
+            'by': 'ProProfs',
+            'date': '2020-10-24T00:00:00',
+            'certs': [
+                'https://www.mediafire.com/convkey/bbb7/8vo15pj55tx2n2e7g.jpg',
+                'https://www.mediafire.com/convkey/bbb7/8vo15pj55tx2n2e7g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'Internet Terms',
+            'hours': 1,
+            'by': 'ProProfs',
+            'date': '2020-10-24T00:00:00',
+            'certs': [
+                'https://www.mediafire.com/convkey/1b33/5foug5guws6nuat7g.jpg',
+                'https://www.mediafire.com/convkey/1b33/5foug5guws6nuat7g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'JavaScript Basic Knowledge',
+            'hours': 1,
+            'by': 'ProProfs',
+            'date': '2020-11-15T00:00:00',
+            'certs': [
+                'https://www.mediafire.com/convkey/1117/ova11g0lm7mg9ll7g.jpg',
+                'https://www.mediafire.com/convkey/1117/ova11g0lm7mg9ll7g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'JavaScript Academic',
+            'hours': 1,
+            'by': 'ProProfs',
+            'date': '2020-11-15T00:00:00',
+            'certs': [
+                'https://www.mediafire.com/convkey/4fbf/xvxp03p58d9oecs7g.jpg',
+                'https://www.mediafire.com/convkey/4fbf/xvxp03p58d9oecs7g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'JavaScript Test',
+            'hours': 1,
+            'by': 'ProProfs',
+            'date': '2020-11-15T00:00:00',
+            'certs': [
+                'https://www.mediafire.com/convkey/925e/8xgwhuzetyoxc017g.jpg',
+                'https://www.mediafire.com/convkey/925e/8xgwhuzetyoxc017g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'JavaScript Test',
+            'hours': 1,
+            'by': 'ProProfs',
+            'date': '2020-11-15T00:00:00',
+            'certs': [
+                'https://www.mediafire.com/convkey/925e/8xgwhuzetyoxc017g.jpg',
+                'https://www.mediafire.com/convkey/925e/8xgwhuzetyoxc017g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'Linux Command Line',
+            'hours': 1,
+            'by': 'ProProfs',
+            'date': '2020-10-24T00:00:00',
+            'certs': [
+                'https://www.mediafire.com/convkey/4fed/1dhhlcnl9rzwq817g.jpg',
+                'https://www.mediafire.com/convkey/4fed/1dhhlcnl9rzwq817g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'Types of Computers',
+            'hours': 1,
+            'by': 'ProProfs',
+            'date': '2020-10-24T00:00:00',
+            'certs': [
+                'https://www.mediafire.com/convkey/392f/izl14fmy7b0xdqy7g.jpg',
+                'https://www.mediafire.com/convkey/392f/izl14fmy7b0xdqy7g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'Advanced Computer',
+            'hours': 1,
+            'by': 'ProProfs',
+            'date': '2020-10-24T00:00:00',
+            'certs': [
+                'https://www.mediafire.com/convkey/c964/y4bi2b0a0mplmrw7g.jpg',
+                'https://www.mediafire.com/convkey/c964/y4bi2b0a0mplmrw7g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'Introduction to Angular',
+            'hours': 2,
+            'by': 'Great Learning',
+            'date': '2022-01-03T00:00:00',
+            'certs': [
+                'https://www.mediafire.com/convkey/b11d/1fosxyytckuv8lc7g.jpg',
+                'https://www.mediafire.com/convkey/b11d/1fosxyytckuv8lc7g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'Angular for Beginners',
+            'hours': 2.5,
+            'by': 'Great Learning',
+            'date': '2022-01-06T00:00:00',
+            'certs': [
+                'https://www.mediafire.com/convkey/0a36/1fosxyytckuv8lc7g.jpg',
+                'https://www.mediafire.com/convkey/0a36/1fosxyytckuv8lc7g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'Angular for Intermediate Level',
+            'hours': 2.5,
+            'by': 'Great Learning',
+            'date': '2022-01-09T00:00:00',
+            'certs': [
+                'https://www.mediafire.com/convkey/6dad/czihxn2pk1kpegp7g.jpg',
+                'https://www.mediafire.com/convkey/6dad/czihxn2pk1kpegp7g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'Angular for Advanced Level',
+            'hours': 3,
+            'by': 'Great Learning',
+            'date': '2022-01-12T00:00:00',
+            'certs': [
+                'https://www.mediafire.com/convkey/d546/uz2j53uj9dtndv17g.jpg',
+                'https://www.mediafire.com/convkey/d546/uz2j53uj9dtndv17g.jpg',
+                ''
+            ]
+        },
+        {
+            'name': 'Game Development With JS',
+            'hours': 3,
+            'by': 'SoloLearn',
+            'date': '2022-01-25T00:00:00',
+            'certs': [
+                'https://www.mediafire.com/convkey/8744/pqxqpvzic24ots67g.jpg',
+                'https://www.mediafire.com/convkey/8744/pqxqpvzic24ots67g.jpg',
+                'https://www.sololearn.com/Certificate/1140-5041222/pdf'
+            ]
+        },
+        {
+            'name': 'The Advanced HTML5 Course',
+            'hours': 1,
+            'by': 'Udemy',
+            'date': '2022-01-25T00:00:00',
+            'certs': [
+                'https://www.mediafire.com/convkey/0d80/4lsaq6jk2whpnbp7g.jpg',
+                'https://www.mediafire.com/convkey/0d80/4lsaq6jk2whpnbp7g.jpg',
+                'https://www.udemy.com/certificate/UC-6c856025-9098-475b-a8d8-26fd774cd4ec/'
+            ]
+        },
+        {
+            'name': 'Protocolos de redes - instalação e configuação em sistemas linux',
+            'hours': 50,
+            'by': 'Ciência e Letras',
+            'date': '2012-10-15T00:00:00',
+            'certs': [
+                'https://www.mediafire.com/convkey/e169/j1uzy2puanbpxbp7g.jpg',
+                'https://www.mediafire.com/convkey/e169/j1uzy2puanbpxbp7g.jpg',
+                'https://www.mediafire.com/convkey/e169/j1uzy2puanbpxbp7g.jpg'
+            ]
+        },
+        {
+            'name': 'Sistema Operativo - Distribuições Linux',
+            'hours': 50,
+            'by': 'Ciência e Letras',
+            'date': '2012-11-14T00:00:00',
+            'certs': [
+                'https://www.mediafire.com/convkey/79a2/4wyhp3ircjatoso7g.jpg',
+                'https://www.mediafire.com/convkey/79a2/4wyhp3ircjatoso7g.jpg',
+                'https://www.mediafire.com/convkey/79a2/4wyhp3ircjatoso7g.jpg'
+            ]
+        },
+        {
+            'name': 'Aprende Typescript de 0 a 100',
+            'hours': 3,
+            'by': 'Udemy',
+            'date': '2022-01-27T00:00:00',
+            'certs': [
+                'https://www.udemy.com/certificate/UC-eb449d77-c512-4969-8ea2-b3ecddc5f33b',
+                'https://www.mediafire.com/convkey/2730/x8p0cx0j2r4m5tc7g.jpg',
+                'https://udemy-certificate.s3.amazonaws.com/pdf/UC-eb449d77-c512-4969-8ea2-b3ecddc5f33b.pdf'
+            ]
+        },
+        {
+            'name': 'Visual Studio Online',
+            'hours': 1,
+            'by': 'Great Learning',
+            'date': '2022-01-27T00:00:00',
+            'certs': [
+                'https://www.mediafire.com/convkey/30b0/6b8u4v05p8lz0te7g.jpg',
+                'https://www.mediafire.com/convkey/30b0/6b8u4v05p8lz0te7g.jpg',
+                'https://www.mediafire.com/convkey/30b0/6b8u4v05p8lz0te7g.jpg'
+            ]
+        },
+        {
+            'name': 'Web Development Fundamentals',
+            'hours': 3,
+            'by': 'SoloLearn',
+            'date': '2022-02-03T00:00:00',
+            'certs': [
+                'https://www.mediafire.com/convkey/5f31/mgzr4cp97ntusgq7g.jpg',
+                'https://www.mediafire.com/convkey/5f31/mgzr4cp97ntusgq7g.jpg',
+                'https://www.mediafire.com/convkey/5f31/mgzr4cp97ntusgq7g.jpg'
+            ]
+        },
+        {
+            'name': '.Net Fundamentals',
+            'hours': 2,
+            'by': 'Great Learning',
+            'date': '2022-02-04T00:00:00',
+            'certs': [
+                'https://www.mediafire.com/convkey/e814/pnrc35dutsq32k07g.jpg',
+                'https://www.mediafire.com/convkey/e814/pnrc35dutsq32k07g.jpg',
+                'https://www.mediafire.com/convkey/e814/pnrc35dutsq32k07g.jpg'
+            ]
+        },
+        {
+            'name': 'MSK TypeScript Bootcamp',
+            'hours': 3,
+            'by': 'Udemy',
+            'date': '2022-02-15T00:00:00',
+            'certs': [
+                'https://www.udemy.com/certificate/UC-3b23c64b-373e-45d0-ad63-a5bfb4ddc3b6/',
+                'https://www.mediafire.com/convkey/eb47/rpu3a8124ag1yat7g.jpg',
+                'https://www.mediafire.com/convkey/e814/pnrc35dutsq32k07g.jpg'
+            ]
+        },
+        {
+            'name': 'Batch Script Programming Crash Course (CMD)',
+            'hours': 2,
+            'by': 'Udemy',
+            'date': '2022-02-22T00:00:00',
+            'certs': [
+                'https://www.udemy.com/certificate/UC-69824c20-8513-41dd-95ad-3fb41b83db29/',
+                'https://www.mediafire.com/convkey/854a/7sn7td5snhur7b97g.jpg',
+                'https://www.mediafire.com/convkey/854a/7sn7td5snhur7b97g.jpg'
             ]
         },
     ],
@@ -2252,7 +2516,7 @@ function CredentialsComponent_li_17_Template(rf, ctx) { if (rf & 1) {
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpropertyInterpolate"]("href", ctx_r0.db.allcourses[i_r2].certs[0], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsanitizeUrl"]);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpropertyInterpolate2"]("title", "[", ctx_r0.db.allcourses[i_r2].hours, " hours] ", ctx_r0.db.allcourses[i_r2].name, "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpropertyInterpolate3"]("title", "[", ctx_r0.db.allcourses[i_r2].hours, " ", ctx_r0.db.allcourses[i_r2].hours === 1 ? "hour" : "hours", "] ", ctx_r0.db.allcourses[i_r2].name, "");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpropertyInterpolate"]("src", ctx_r0.db.allcourses[i_r2].certs[1], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsanitizeUrl"]);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpropertyInterpolate1"]("alt", "Credential for ", ctx_r0.db.allcourses[i_r2].name, "");
@@ -2360,7 +2624,7 @@ CredentialsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdef
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](16, "ul", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](17, CredentialsComponent_li_17_Template, 7, 6, "li", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](17, CredentialsComponent_li_17_Template, 7, 7, "li", 8);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
