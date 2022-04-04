@@ -7,7 +7,7 @@
     <base href="https://vitmfs.github.io/assets/">
     <link rel="image_src" href="https://www.mediafire.com/convkey/41ce/72u94krgdpoij3i7g.jpg"/>
     <title>JavaScript Functions</title>
-    <meta name="description" content="JavaScript functions written during problem solving activities. Can be easily copied and pasted to other projects.">
+    <meta name="description" content="JavaScript functions written during problem solving activities that can be easily copied and pasted to other projects.">
 </head>
 <body style="background-color: black; color: rgb(27, 255, 7); font-size: 16px">
     <script>
@@ -16,14 +16,15 @@
         ////////////////////////////////////////////////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////////////
         function logInformation( data ) {
-            window.console(arguments.length);
-            window.console(writeInformation.toString());
+            window.console.log(arguments.length);
+            window.console.log(logInformation.toString());
             window.console.log(data);
             window.console.debug(data);
             window.console.error(data);
-            window.document.write(data)
+            
             window.alert(data);
-            window.print();
+            window.print(data);
+            
 
             const users = [
                 {
@@ -45,6 +46,8 @@
 
             const elem = document.querySelector('div');
             console.dir(elem);
+
+            window.document.write(data);
 
         }
         functionsArray.push(logInformation);
