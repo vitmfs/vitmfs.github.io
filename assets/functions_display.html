@@ -23,7 +23,7 @@
             window.console.error(data);
             
             window.alert(data);
-            window.print(data);
+            window.print(data); // calls printer
             
 
             const users = [
@@ -76,8 +76,8 @@
             let corrected = (0.2 * 10 + 0.1 * 10) / 10;
 
             let person = {firstName:'John', lastName:'Doe', age:50, eyeColor:'blue'};
-            person = null;    // Now value is null, but type is still an object
-            person = undefined;   // Now both value and type is undefined
+            person = null;      // Now value is null, but type is still an object
+            person = undefined; // Now both value and type is undefined
 
             let x1 = '';             // new primitive string
             let x2 = 0;              // new primitive number
@@ -1310,6 +1310,164 @@
 
         }
         functionsArray.push(retroCellphoneEncription);
+
+
+        function isDivisibleByInteger( originalNumber, integerToDivideTo ) {
+            return originalNumber % integerToDivideTo === 0;
+        }
+        functionsArray.push(isDivisibleByInteger);
+
+
+        function isDivisibleBy1( numberToCheck ) {
+            return Number.isInteger(numberToCheck);
+        }
+        functionsArray.push(isDivisibleBy1);
+
+
+        function isDivisibleBy2( numberToCheck ) {
+            let numberStr = '' + numberToCheck;
+            let lastDigitStr = numberToCheck[numberToCheck.length-1];
+            let lastDigit = Math.parseInt(lastDigitStr);
+            return lastDigit % 2 === 0;
+        }
+        functionsArray.push(isDivisibleBy2);
+
+        function isDivisibleBy3( numberToCheck ) {
+            let sumOfabsoluteValuesOfDigits = 0;
+            numberToCheck.toString().split('').forEach( (digit) => {
+                sumOfabsoluteValuesOfDigits += Math.parseInt(digit);
+            });
+            return (sumOfabsoluteValuesOfDigits % 3 === 0);
+        }
+        functionsArray.push(isDivisibleBy3);
+
+        function isDivisibleBy4( numberToCheck ) {
+            const numberString = '' + numberToCheck;
+            const lastDigit = Math.parseInt(numberString[numberString.length-1]);
+            let digitBeforeLastDigit = 0;
+            if (numberString.length > 1) {
+                digitBeforeLastDigit = Math.parseInt(numberString[numberString.length-2]);
+            }
+            
+            const lastDigitPlusDoubleTheDigitBeforeLastDigit = lastDigit + (2 * digitBeforeLastDigit);
+            return  lastDigitPlusDoubleTheDigitBeforeLastDigit === 0 || 
+                    lastDigitPlusDoubleTheDigitBeforeLastDigit % 4 === 0;
+        }
+        functionsArray.push(isDivisibleBy4);
+
+        function isDivisibleBy5( numberToCheck ) {
+            const numberString = '' + numberToCheck;
+            const lastDigit = Math.parseInt(numberString[numberString.length-1]);
+            return lastDigit === 0 || lastDigit === 5;
+        }
+        functionsArray.push(isDivisibleBy5);
+
+        function isDivisibleBy6( numberToCheck ) {
+            return isDivisibleBy2(numberToCheck) && isDivisibleBy3(numberToCheck);
+        }
+        functionsArray.push(isDivisibleBy6);
+
+        function isDivisibleBy7( numberToCheck ) {
+            const numberString = '' + numberToCheck;
+            const lastDigit = Math.parseInt(numberString[numberString.length-1]);
+            return (numberToCheck - (2 * lastDigit)) % 7 === 0;
+        }
+        functionsArray.push(isDivisibleBy7);
+
+        function isDivisibleBy8( numberToCheck ) {
+            const numberString = '' + numberToCheck;
+            const lastDigit = Math.parseInt(numberString[numberString.length-1]);
+            const digitBeforeLastDigit = 0;
+            if (numberString.length === 2 ) {
+                digitBeforeLastDigit = Math.parseInt(numberString[numberString.length-2]);
+            }
+            const digitBeforeDigitBeforeLastDigit = 0;
+            if (numberString.length > 2 ) { 
+                digitBeforeDigitBeforeLastDigit = Math.parseInt(numberString[numberString.length-3]);
+            }
+            
+            return  lastDigit + (2*digitBeforeLastDigit) + (4*digitBeforeDigitBeforeLastDigit) === 0 ||
+                    (lastDigit + (2*digitBeforeLastDigit) + (4*digitBeforeDigitBeforeLastDigit)) % 8 === 0;
+        }
+        functionsArray.push(isDivisibleBy8);
+
+        function isDivisibleBy9( numberToCheck ) {
+            let sumOfabsoluteValuesOfDigits = 0;
+            numberToCheck.toString().split('').forEach( (digit) => {
+                sumOfabsoluteValuesOfDigits += Math.parseInt(digit);
+            });
+            return (sumOfabsoluteValuesOfDigits % 9 === 0);
+        }
+        functionsArray.push(isDivisibleBy9);
+
+        function isDivisibleBy11( numberToCheck ) {
+            const numberString = '' + Math.abs(numberToCheck);
+            const lastDigit = parseInt(numberString[numberString.length-1]);
+            const pairs = ['11', '22', '33', '44', '55', '66', '77', '88', '99'];
+            if (numberString.length === 1) {
+                return false;
+            } else if (pairs.includes(numberString)) { 
+                return true; 
+            } else {
+                return isDivisibleBy11( parseInt(numberString.substring(0, numberString.length-1)) - lastDigit);
+            }
+        }
+        functionsArray.push(isDivisibleBy11);
+
+        function isDivisibleBy12( numberToCheck ) {
+            return isDivisibleBy3(numberToCheck) && isDivisibleBy4(numberToCheck);
+        }
+        functionsArray.push(isDivisibleBy12);
+
+        function isDivisibleBy13( numberToCheck ) {
+            let numberString = '' + Math.abs(numberToCheck);
+            const lastDigit = parseInt(numberString[numberString.length-1]);
+            numberString = numberString.substring(0, numberString.length-1);
+            return (4 * lastDigit + parseInt(numberString)) % 13 === 0;
+        }
+        functionsArray.push(isDivisibleBy13);
+
+        function isDivisibleBy17( numberToCheck ) {
+            let numberString = '' + Math.abs(numberToCheck);
+            const lastDigit = parseInt(numberString[numberString.length-1]);
+            return parseInt(numberString.substring(0, numberString.length -1)) - 5 * lastDigit;
+        }
+        functionsArray.push(isDivisibleBy17);
+
+        function isDivisibleBy19( numberToCheck ) {
+            let numberString = '' + Math.abs(numberToCheck);
+            const lastDigit = parseInt(numberString[numberString.length-1]);
+            return ((2 * lastDigit) + parseInt(numberString.substring(0, numberString.length -1))) % 19 === 0;
+        }
+        functionsArray.push(isDivisibleBy19);
+
+        function isDivisibleBy23( numberToCheck ) {
+            let numberString = '' + Math.abs(numberToCheck);
+            const lastDigit = parseInt(numberString[numberString.length-1]);
+            return ((7 * lastDigit) + parseInt(numberString.substring(0, numberString.length -1))) % 23 === 0;
+        }
+        functionsArray.push(isDivisibleBy23);
+
+        function isDivisibleBy25( numberToCheck ) {
+            let numberString = '' + Math.abs(numberToCheck);
+            const lastDigits = numberString.substring(numberstring.length-2);
+            return ['00', '25', '50' ,'75'].includes(lastDigits);
+        }
+        functionsArray.push(isDivisibleBy25);
+
+        function isDivisibleBy29( numberToCheck ) {
+            let numberString = '' + Math.abs(numberToCheck);
+            const lastDigit = parseInt(numberString[numberString.length-1]);
+            return ((3 * lastDigit) + parseInt(numberString.substring(0, numberString.length -1))) % 29 === 0;
+        }
+        functionsArray.push(isDivisibleBy29);
+
+        function isDivisibleBy31( numberToCheck ) {
+            let numberString = '' + Math.abs(numberToCheck);
+            const lastDigit = parseInt(numberString[numberString.length-1]);
+            return (parseInt(numberString.substring(0, numberString.length -1)) - (3 * lastDigit)) % 31 === 0;
+        }
+        functionsArray.push(isDivisibleBy31);
 
         
         
