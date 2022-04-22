@@ -117,6 +117,17 @@
         }
         functionsArray.push(datesDemo);
 
+        function differenceInDays(startDateObj, endDateObj) {
+
+            // const startDate = new Date();
+            // const endDate   = new Date(2022, 3, 26, 12, 0, 0); 
+            // return Math.floor((endDateObj.getTime() - startDateObj.getTime())/(24*60*60*1000)); 
+
+            return Math.floor((endDateObj - startDateObj)/(24*60*60*1000));
+        }
+        functionsArray.push(differenceInDays);
+
+
         function addZeroToDateStringPart( dateStringPart ) {
 
             const correctedDateStringPart = 
@@ -163,12 +174,12 @@
         functionsArray.push(MathDemo);
 
         function operatorsDemo() {
-            let my_sum = 2 + 2;
-            let my_subtraction = 5 - 2;
-            let my_multiplication = 5 * 2;
-            let my_exponentiation = 5 ** 2 === Math.pow(5,2);
-            let my_division = 10 / 2;
-            let my_modulus = 10 % 3;
+            let my_sum              = 2 + 2;
+            let my_subtraction      = 5 - 2;
+            let my_multiplication   = 5 * 2;
+            let my_exponentiation   = 5 ** 2 === Math.pow(5,2);
+            let my_division         = 10 / 2;
+            let my_modulus          = 10 % 3;
 
             my_sum++;
             my_sum--;
@@ -275,7 +286,7 @@
             
             // CASE INSENSITIVE
             let text = 'Please visit Microsoft!';
-            let newText = text.replace(/MICROSOFT/gi, 'W3Schools');
+            let newText = text.replace(/MICROSOFT/gi, 'W3Schools'); // 'Please visit W3Schools!''
 
             let templateLiterals1 = `He's often called 'Johnny ${text}'`;
             let templateLiterals2 =
@@ -284,7 +295,7 @@
                 jumps over
                 the lazy dog`;
 
-            String.fromCharCode(100);
+            String.fromCharCode(100); // 'd'
             text.trim();
             text.toUpperCase();
             text.toLowerCase();
@@ -296,24 +307,53 @@
             text.startsWith('Hello');
             text.endsWith('Doe');
             text.split(' ');
-            str.indexOf('something');
-            str.lastIndexOf('something');
-            str.search('regular_expression');
+            str.indexOf('something');       // number
+            str.lastIndexOf('something');   // number
+            str.search(/something/gi);      // number
 
             let tags = ['template literals', 'javascript', 'es6'];
             let header = 'Heading 2';
-            let html = `<h2>${header}</h2><ul>`;
+            let html = `&lth2&gt${header}&lt/h2&gt&ltul&gt`;
             for (const x of tags) {
-            html += `<li>${x}</li>`;
+                html += `&lti&gt${x}&lt/li&gt`;
             }
-            html += `</ul>`;
+            html += `&lt/ul&gt`;
 
             // https://www.w3schools.com/jsref/jsref_obj_string.asp
 
             let stringToRepeat = 's';
-            stringToRepeat.repeat(3);
+            stringToRepeat.repeat(3); // 'sss'
         }
         functionsArray.push(stringsDemo);
+
+        function regularExpressionsDemo() {
+            const myRegex = 
+            /^Ricky|StringThatIWantToFind|AnotherStringThatIWantToFind|SomeW.rd|b[aiu]g|[aeiou]|b[a-z0-9]g|[^ .!@/]|bo+a|go*|P(engu|umpk)in|caboose$/gi; // (g=all; i=ignoreCase)
+
+            const re = /^([aeiou]).*\1$/; // save the character
+            let regEx = new RegExp('^(Mr|Mrs|Ms|Dr|Er)(\\.)([a-zA-Z])+$');
+            
+            let text = 'The rain in SPAIN stays mainly in the plain';
+            text.match(/ain/gi); // ['ain', 'AIN', 'ain', 'ain']
+
+            let n = text.search('W3Schools');
+            text.search(/w3schools/i);
+            text.replace('Microsoft', 'W3Schools');
+            text.replace(/microsoft/i, 'W3Schools');
+
+            const pattern = /e/;
+            pattern.test('The best things in life are free!'); // true
+
+            /e/.test('The best things in life are free!'); // true
+            /e/.exec('The best things in life are free!'); // ['e', index: 2, input: 'The best things in life are free!', groups: undefined]
+
+            // Use /()/ instead of new RegExp()
+
+            // https://www.w3schools.com/js/js_regexp.asp
+
+        }
+        functionsArray.push(regularExpressionsDemo);
+
 
         function stringHasAllUniqueCharacters( str ) {
             return (new Set(str).size === str.length);
@@ -343,7 +383,8 @@
         function reverseString2 ( str ) {
             let reversedString = '';
             const strLength = str.length;
-            for( let i = strLength -1; i >= 0; i-- ) {
+            const lastIndex = strLength -1;
+            for( let i = lastIndex; i >= 0; i-- ) {
                 reversedString += str[i];
             }
 
@@ -427,35 +468,6 @@
         functionsArray.push(translateLetterToNATOAlphabet);
 
 
-        function regularExpressionsDemo() {
-            const myRegex = 
-            /^Ricky|StringThatIWantToFind|AnotherStringThatIWantToFind|SomeW.rd|b[aiu]g|[aeiou]|b[a-z0-9]g|[^ .!@/]|bo+a|go*|P(engu|umpk)in|caboose$/gi; // (g=all; i=ignoreCase)
-
-            const re = /^([aeiou]).*\1$/; // save the character
-            let regEx = new RegExp('^(Mr|Mrs|Ms|Dr|Er)(\\.)([a-zA-Z])+$');
-            
-            let text = 'The rain in SPAIN stays mainly in the plain';
-            text.match(/ain/gi);
-
-            let n = text.search('W3Schools');
-            text.search(/w3schools/i);
-            text.replace('Microsoft', 'W3Schools');
-            text.replace(/microsoft/i, 'W3Schools');
-
-            const pattern = /e/;
-            pattern.test('The best things in life are free!');
-
-            /e/.test('The best things in life are free!');
-            /e/.exec('The best things in life are free!');
-
-            // Use /()/ instead of new RegExp()
-
-            // https://www.w3schools.com/js/js_regexp.asp
-
-        }
-        functionsArray.push(regularExpressionsDemo);
-
-
         function infinityDemo() {
             let myNumber = 2;
             while (myNumber != Infinity) {
@@ -468,7 +480,7 @@
 
 
         function convertDecimalsTo() {
-            let myNumber = 32;
+            let myNumber = 32; // ???
             myNumber.toString(10);
             myNumber.toString(32);
             myNumber.toString(16);
@@ -479,25 +491,25 @@
 
 
         function numbersDemo() {
-            const a = Number('111');
-            const b = parseInt('11');
-            const c = parseFloat('0.78');
-            Number(true);
-            Number(false);
-            Number('10');
-            Number('  10');
-            Number('10  ');
-            Number(' 10  ');
-            Number('10.33');
-            Number('10,33');
-            Number('10 33');
-            Number('John');
-            Number.MAX_VALUE;
-            Number.MIN_VALUE;
-            Number.POSITIVE_INFINITY;
-            Number.NEGATIVE_INFINITY;
-            Number.NaN;
-            Number.isNaN(5);
+            const a = Number('111');        // 111
+            const b = parseInt('11');       // 11
+            const c = parseFloat('0.78');   // 0.78
+            Number(true);                   // 1
+            Number(false);                  // 0
+            Number('10');                   // 10
+            Number('  10');                 // 10
+            Number('10  ');                 // 10
+            Number(' 10  ');                // 10
+            Number('10.33');                // 10.33
+            Number('10,33');                // NaN
+            Number('10 33');                // NaN
+            Number('John');                 // NaN
+            Number.MAX_VALUE;               // 1.7976931348623157e+308
+            Number.MIN_VALUE;               // 5e-324
+            Number.POSITIVE_INFINITY;       // Infinity
+            Number.NEGATIVE_INFINITY;       // -Infinity
+            Number.NaN;                     // NaN
+            Number.isNaN(5);                // false
         }
         functionsArray.push(numbersDemo);
 
@@ -510,28 +522,28 @@
 
         function arraysDemo() {
             const fruits = ['Banana', 'Orange', 'Apple'];
-            Array.isArray(fruits);
-            fruits instanceof Array;
+            Array.isArray(fruits);      // true
+            fruits instanceof Array;    // true
 
-            fruits.join(' * ');
-            fruits.pop();
-            fruits.push('Kiwi');
-            fruits.shift();
+            fruits.join(' * ');         // 'Banana * Orange * Apple'
+            fruits.pop();               // 'Apple'
+            fruits.push('Kiwi');        // 3
+            fruits.shift();             // 'Banana'
             fruits.unshift('Lemon');
             fruits[0] = 'Kiwi';
             fruits.splice(2, 0, 'Lemon', 'Kiwi');
-            fruits.splice(0, 1);
+            fruits.splice(0, 1);        // ['Kiwi']
             fruits.concat([], []);
-            fruits.slice(1);
-            fruits.slice(1, 3);
-            fruits.sort(); // alphabetically
-            fruits.reverse();
+            fruits.slice(1);            // ['Lemon', 'Kiwi', 'Kiwi']
+            fruits.slice(1, 3);         // ['Lemon', 'Kiwi']
+            fruits.sort();              // alphabetically, doesn't work for numbers
+            fruits.reverse();           // ['Orange', 'Lemon', 'Kiwi', 'Kiwi']
 
             // NUMBERIC SORT/REVERSE
             const points = [40, 100, 1, 5, 25, 10];
-            points.sort(function(a, b){return a - b});
-            points.sort(function(a, b){return b - a});
-            points.sort((a, b) => a - b);
+            points.sort(function(a, b){return a - b}); // [1, 5, 10, 25, 40, 100]
+            points.sort(function(a, b){return b - a}); // [100, 40, 25, 10, 5, 1]
+            points.sort((a, b) => a - b);              // [1, 5, 10, 25, 40, 100]
 
             // RANDOM ORDER
             for (let i = points.length -1; i > 0; i--) {
@@ -539,7 +551,7 @@
                 let k = points[i]
                 points[i] = points[j]
                 points[j] = k
-            }
+            }                                           // [40, 25, 1, 100, 5, 10]
 
             // MIN/MAX
             points.sort(function(a, b){return a - b});
@@ -547,6 +559,9 @@
             const max = points[points.length-1];
             Math.max.apply(null, points);
             Math.min.apply(null, points);
+
+            Math.max(...points);
+            Math.min(...points);
 
             const cars = [
                 {type:'Volvo', year:2016},
@@ -837,13 +852,13 @@
 
         function setDemo() {
             const letters = new Set(['a','b','c','c']);
-            letters.add('d');
-            letters.delete('a');
-            letters.has('a');
-            letters.values();
-            letters.size;
+            letters.add('d');       // {'a', 'b', 'c', 'd'}
+            letters.delete('a');    // true
+            letters.has('a');       // false
+            letters.values();       // {'b', 'c', 'd'}
+            letters.size;           // 3
 
-            Array.from(letters);
+            Array.from(letters);    // ['b', 'c', 'd']
         }
         functionsArray.push(setDemo);
 
@@ -859,12 +874,34 @@
             // Set Map Values
             fruits.set('apples', 500);
             fruits.set('bananas', 300);
-            fruits.set('oranges', 200);
+            fruits.set('oranges', 200); // {'apples' => 500, 'bananas' => 300, 'oranges' => 200}
 
-            fruits.get('apples');
-            fruits.size;
-            fruits.delete('apples');
-            fruits.has('apples');
+            fruits.get('apples');       // 500
+            fruits.size;                // 3
+            fruits.delete('apples');    // true
+            fruits.has('apples');       // false
+            fruits.entries();           // const fruits = new Map();
+
+            // Set Map Values
+            fruits.set('apples', 500);
+            fruits.set('bananas', 300);
+            fruits.set('oranges', 200); // {'apples' => 500, 'bananas' => 300, 'oranges' => 200}
+
+            fruits.get('apples');       // 500
+            fruits.size;                // 3
+            fruits.delete('apples');    // true
+            fruits.has('apples');       // false
+            fruits.entries();           // const fruits = new Map();
+
+            // Set Map Values
+            fruits.set('apples', 500);
+            fruits.set('bananas', 300);
+            fruits.set('oranges', 200); // {'apples' => 500, 'bananas' => 300, 'oranges' => 200}
+
+            fruits.get('apples');       // 500
+            fruits.size;                // 3
+            fruits.delete('apples');    // true
+            fruits.has('apples');       // false
             fruits.entries();
 
             // Create a Map
@@ -873,8 +910,6 @@
                 ['bananas', 300],
                 ['oranges', 200]
             ]);
-
-
 
             // Set Map Values
             fruits.set('apples', 500);
@@ -887,8 +922,8 @@
             fruits.delete('apples');
             fruits.clear();
 
-            typeof fruits;
-            fruits instanceof Map;
+            typeof fruits;          // 'object'
+            fruits instanceof Map;  // true
 
             // Object	Map
             // Iterable	Not directly iterable	Directly iterable
@@ -896,9 +931,9 @@
             // Key Types	Keys must be Strings (or Symbols)	Keys can be any datatype
             // Key Order	Keys are not well ordered	Keys are ordered by insertion
             // Defaults	Have default keys	Do not have default keys
-            fruits.entries();
-            fruits.keys();
-            fruits.values();
+            fruits.entries();   // {'apples' => 500, 'bananas' => 300, 'oranges' => 200}
+            fruits.keys();      // {'apples', 'bananas', 'oranges'}
+            fruits.values();    // {500, 300, 200}
 
             // Create Objects
             const apples = {name: 'Apples'};
@@ -919,20 +954,20 @@
 
         function dataTypes() {
             // https://www.w3schools.com/js/js_typeof.asp
-            typeof 'John'                 // Returns 'string'
-            typeof 3.14                   // Returns 'number'
-            typeof NaN                    // Returns 'number'
-            typeof false                  // Returns 'boolean'
-            typeof [1,2,3,4]              // Returns 'object'
-            typeof {name:'John', age:34}  // Returns 'object'
-            typeof new Date()             // Returns 'object'
-            typeof function () {}         // Returns 'function'
-            typeof myCar                  // Returns 'undefined' *
-            typeof null                   // Returns 'object'
-            typeof {name:'John', age:34} // Returns 'object'
-            typeof [1,2,3,4]             // Returns 'object' (not 'array', see note below)
-            typeof null                  // Returns 'object'
-            typeof function myFunc(){}   // Returns 'function'
+            typeof 'John'                   // Returns 'string'
+            typeof 3.14                     // Returns 'number'
+            typeof NaN                      // Returns 'number'
+            typeof false                    // Returns 'boolean'
+            typeof [1,2,3,4]                // Returns 'object'
+            typeof {name:'John', age:34}    // Returns 'object'
+            typeof new Date()               // Returns 'object'
+            typeof function () {}           // Returns 'function'
+            typeof myCar                    // Returns 'undefined' *
+            typeof null                     // Returns 'object'
+            typeof {name:'John', age:34}    // Returns 'object'
+            typeof [1,2,3,4]                // Returns 'object' (not 'array')
+            typeof null                     // Returns 'object'
+            typeof function myFunc(){}      // Returns 'function'
             /*
             The data type of NaN is number
             The data type of an array is object
@@ -1467,6 +1502,108 @@
             return (parseInt(numberString.substring(0, numberString.length -1)) - (3 * lastDigit)) % 31 === 0;
         }
         functionsArray.push(isDivisibleBy31);
+
+
+        function maxProductMultipleOf3( arr ) {
+
+            let maxProdMultOf3          = Number.MIN_VALUE;
+            let maxNumber               = Number.MIN_VALUE;
+            let secondBiggestNumber     = Number.MIN_VALUE;
+            let maxNumberDivisibleBy3   = Number.MIN_VALUE;
+
+            const arrayLength = arr.length;
+            for (let i = 0; i < arrayLength; i++) {
+                if (arr[i] > maxNumber) {
+                    maxNumber = arr[i];
+                }
+                if (arr[i] > secondBiggestNumber && arr[i] !== maxNumber) {
+                    secondBiggestNumber = arr[i];
+                }
+                if (arr[i] % 3 === 0 && arr[i]> maxNumberDivisibleBy3) {
+                    maxNumberDivisibleBy3 = arr[i];
+                }
+            }
+
+
+            if (maxNumber !== maxNumberDivisibleBy3) {
+                maxProdMultOf3 = maxNumber * maxNumberDivisibleBy3; 
+            } else {
+                maxProdMultOf3 = secondBiggestNumber * maxNumberDivisibleBy3; 
+
+                // CHECK IF THERE ARE TWO maxNumberDivisibleBy3
+                // FOR EXAMPLE FOR [1,9,9,2,4];
+                let str = arr.join('');
+                if (str.indexOf('' + maxNumberDivisibleBy3) !== str.lastIndexOf('' + maxNumberDivisibleBy3)) {
+                    maxProdMultOf3 = maxNumberDivisibleBy3 * maxNumberDivisibleBy3;
+                }
+            }
+
+            return maxProdMultOf3;
+
+        }
+        functionsArray.push(maxProductMultipleOf3);
+
+
+        function maxProductMultipleOf3_Two( arr ) {
+
+            let maxProdMultOf3 = Number.MIN_VALUE;
+
+            const sortedArr = arr.sort(function(a, b){return a - b});
+            const lastIndex = arr.length - 1;
+            for (let i = lastIndex; i > 0; i-- ) {
+                if (sortedArr[i] % 3 === 0) {
+                    if (i !== lastIndex) {
+                        maxProdMultOf3 =  sortedArr[i] * sortedArr[lastIndex];
+                        break;
+                    } else {
+                        maxProdMultOf3 =  sortedArr[i] * sortedArr[i-1];
+                        break;
+                    }
+                }
+            }
+
+            return maxProdMultOf3;
+        }
+        functionsArray.push(maxProductMultipleOf3_Two);
+
+
+        function maxProductMultipleOf3_Three( arr ) {
+
+            let maxProdMultOf3 = Number.MIN_VALUE;
+
+            const arrayLength = arr.length;
+            for (let i = 0; i < arrayLength-1; i++) {
+
+                let remainingNumbersToMultiplyTo = arr.slice(i+1);
+
+                remainingNumbersToMultiplyTo.forEach( (numberValue) => {
+                    
+                    const product               = arr[i] * numberValue;
+                    const productIsMultipleOf3  = (product % 3 === 0);
+
+                    if ( productIsMultipleOf3 && (product > maxProdMultOf3) ) {
+                        maxProdMultOf3 = product;
+                    }
+                });
+
+            }
+
+            return maxProdMultOf3;
+        }
+        functionsArray.push(maxProductMultipleOf3_Three);
+
+
+        function isPrime(n) {
+            let halfish = Math.floor(n/2);
+            for (let i = 2; i <= halfish; i++) {
+                if (n % i === 0) {
+                    return false;
+                }
+
+            }
+            return true;
+        }
+        functionsArray.push(isPrime);
 
         
         
