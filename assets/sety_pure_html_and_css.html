@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etsy</title>
+    <!-- GENERAL STYLES -->
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            background-color: #ffffff;
+            color: black;
+            /* border: 1px solid black; */
+        } 
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <style>
+            header {
+                background-color: white;
+            }
+    
+            .search-for-anything-row {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                background-color: white;
+            }
+    
+            header div form {
+                display: inline;
+                background-color: white;
+            }
+    
+            input[type="text"] {
+                border-radius: 25px 0px 0px 25px;
+                border-style: solid;
+                border-color: grey;
+                border-right-color: none;
+                border-width: 1px;
+                margin-right: -10px;
+                height: 50px;
+                width: 70%;
+                background-color: rgb(243, 236, 236) !important;
+            }
+    
+            input[type="submit"] {
+                width: 50px;
+                border-radius: 0px 25px 25px 0px;
+                border-style: solid;
+                border-color: grey;
+                border-width: 1px;
+                border-left-color: none;
+                margin-left: 0px;
+                height: 52px;
+                margin-right: 5%;
+                background-color: rgb(243, 236, 236) !important;
+            }
+
+
+            .sign-in {
+                margin-left: -30px;
+                background-color: white;
+                border: none;
+                height: 40px;
+                width: 80px;
+                border-radius: 20px;
+            }
+
+            .sign-in:hover {
+                background-color: rgb(219, 214, 214);
+                
+            }
+
+            .shopping-cart {
+                margin-left: 20px;
+                background-color: white;
+                border: none;
+                font-size: 20px;
+            }
+    
+            header nav {
+                margin-bottom: 50px;
+                background-color: white;
+                color: #222222;
+                padding-bottom: 10px;
+            }
+    
+            
+            header nav ol {
+                background-color: white;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+    
+            nav ol li {
+                display: inline;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+    
+            header nav ol li a{
+                background-color: white; 
+                text-decoration: none;
+            }
+    
+            header > div > span:first-child {
+                margin-left: 50px;
+                margin-right: 20px;
+                font-family: Arial,sans-serif;
+                font-size: 35px;
+                color: #f1641e;
+                background-color: inherit;
+                position: relative;
+                top: 5px;
+            }
+        </style>
+
+        <div class="search-for-anything-row">
+            <span>Sety</span>
+            <form action="#">
+                <input type="text" placeholder="    Search for anything">
+                <input type="submit" value="  &#128269  ">
+            </form>
+            <button class="sign-in">Sign in</button>
+            <button class="shopping-cart">&#128722;</button>
+        </div>
+
+        <nav >
+            <ol>
+                <li class=""><a href="#">Jewelry&nbsp&amp Accessories</a></li>
+                <li class=""><a href="#">Clothing&nbsp&amp Shoes</a></li>
+                <li class=""><a href="#">Home&nbsp&amp Living</a></li>
+                <li class=""><a href="#">Wedding&nbsp&amp Party</a></li>
+                <li class=""><a href="#">Toys&nbsp&amp Entertainment</a></li>
+                <li class=""><a href="#">Art&nbsp&amp Collectibles</a></li>
+                <li class=""><a href="#">Craft&nbspSuplies&nbsp&amp Tools</a></li>
+
+            </ol>
+        </nav>
+    </header>
+    <!-- END OF HEADER -->
+
+    <!-- EVERYDAY FINDS SECTION -->
+    <section class="every-day-finds-section">
+        <style>
+            h2, h3, h4 {
+                text-align: center;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #ddebe3;
+            }
+
+            .every-day-finds-section {
+                background-color: #ddebe3;
+                height: 47vh;
+            }
+
+            .every-day-finds-section h2 {
+                margin-top: -40px;
+                padding-top: 20px;
+            }
+
+            .every-day-finds-section h4 {
+                margin-bottom: 10px;
+            }
+            div.every-day-finds {
+                background-color: #ddebe3;
+            }
+
+            .every-day-finds-section a, img, div, span {
+                background-color: #ddebe3;
+            }
+
+            .item {
+                width: 10%;
+                margin-left:3%;
+                margin-right:3%;
+                display:inline-block;
+                background-color: #ddebe3;
+    
+            }
+            .item img {
+                border-radius: 50%;
+                width: 100%;
+                height: auto;
+                background-color: #ddebe3;
+            }
+            .item span {
+                background-color: #ddebe3;
+            }
+            .right-arrow:hover {
+                margin-left: 2px;
+                background-color: #ddebe3;
+            }
+        </style>
+        <h2>Find things you'll love. Support independent sellers. Only on Etsy.</h2>
+        <h4>Everyday finds</h4>
+        <div class="every-day-finds">
+            <a href="">
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x300" alt="This is a image" >
+                    <br>
+                    <span>Face masks</span><span class="right-arrow">&rarr;</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x300" alt="This is a image" >
+                    <br>
+                    <span>Wall decor</span><span class="right-arrow">&rarr;</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x300" alt="This is a image" >
+                    <br>
+                    <span>Gift ideas</span><span class="right-arrow">&rarr;</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x300" alt="This is a image" >
+                    <br>
+                    <span>Outdoor garden</span><span class="right-arrow">&rarr;</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x300" alt="This is a image" >
+                    <br>
+                    <span>Self-care</span><span class="right-arrow">&rarr;</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x300" alt="This is a image" >
+                    <br>
+                    <span>Craft kits</span><span class="right-arrow">&rarr;</span>
+                </div>
+            </a>
+            
+            
+        </div>
+    </section>
+    <!-- END OF EVERYDAY FINDS SECTION -->
+
+    <!-- GIFTS SO HOT RIGHT NOW SECTION -->
+    <section class="popular-gifts-section">
+
+        <style>
+            .popular-gifts-section {
+                background-color: white;
+            }
+    
+            .popular-gifts-section h2 {
+                background-color: white;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                font-family: Arial, sans-serif;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 32px;
+            }
+    
+            .popular-gifts-section div p {
+                background-color: white;
+                text-align: left;
+                overflow-x: hidden;
+            }
+    
+            .gift {
+                width: 10%;
+                margin-left:3%;
+                margin-right:3%;
+                display:inline-block;
+                background-color: white;
+                margin-bottom:100px;
+            }
+            .gift img {
+                width: 100%;
+                background-color: white;
+            }
+            .item-name {
+                width: 10%;
+                margin-left:3%;
+                margin-right:3%;
+                display:inline-block;
+                text-align: center;
+            }
+        </style>
+
+        <h2>Popular gifts right now</h2>
+        <div class="gift">
+            <img src="https://via.placeholder.com/580x540" alt="This is a image">
+            <p>Fathers Day Gift for dad</p>
+            <p>Stay fine personalized</p>
+            <p>&#9733;&#9733;&#9733;&#9733;&#9733; (13421)</p>
+            <p>24.87 €</p>
+        </div>
+        <div class="gift">
+            <img src="https://via.placeholder.com/580x540" alt="This is a image">
+            <p>Fathers Day Gift for dad</p>
+            <p>Stay fine personalized</p>
+            <p>&#9733;&#9733;&#9733;&#9733;&#9733; (13421)</p>
+            <p>24.87 €</p>
+        </div>
+        <div class="gift">
+            <img src="https://via.placeholder.com/580x540" alt="This is a image">
+            <p>Fathers Day Gift for dad</p>
+            <p>Stay fine personalized</p>
+            <p>&#9733;&#9733;&#9733;&#9733;&#9733; (13421)</p>
+            <p>24.87 €</p>
+        </div>
+        <div class="gift">
+            <img src="https://via.placeholder.com/580x540" alt="This is a image">
+            <p>Fathers Day Gift for dad</p>
+            <p>Stay fine personalized</p>
+            <p>&#9733;&#9733;&#9733;&#9733;&#9733; (13421)</p>
+            <p>24.87 €</p>
+        </div>
+        <div class="gift">
+            <img src="https://via.placeholder.com/580x540" alt="This is a image">
+            <p>Fathers Day Gift for dad</p>
+            <p>Stay fine personalized</p>
+            <p>&#9733;&#9733;&#9733;&#9733;&#9733; (13421)</p>
+            <p>24.87 €</p>
+        </div>
+        <div class="gift">
+            <img src="https://via.placeholder.com/580x540" alt="This is a image">
+            <p>Fathers Day Gift for dad</p>
+            <p>Stay fine personalized</p>
+            <p>&#9733;&#9733;&#9733;&#9733;&#9733; (13421)</p>
+            <p>24.87 €</p>
+        </div>
+
+
+    </section>
+    <!-- END OF GIFTS SO HOT RIGHT NOW SECTION -->
+
+    <!-- HAND PICKED ITEMS SECTION -->
+    <section class="hand-picked-items-section">
+        <style>
+            section.hand-picked-items-section {
+                background-color: white;
+                padding-top: 10px;
+            }
+            .hand-picked-items-section h2 {
+                background-color: white;
+                font-family: Arial, sans-serif;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 32px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            .hand-picked-items-section .item-names-strip {
+                background-color: white;
+            }
+
+            .item-names-strip .item-name {
+                background-color: white;
+            }
+
+            .item-names-strip .item-name span{
+                background-color: white;
+                font-family: Arial, sans-serif;
+            }
+            .three-images {
+                margin-top: 20px;
+                display: inline-block;
+                width: 40%;
+                background-color: white;
+            }
+
+            .large-image {
+                display: inline-block;
+                width: 55%;
+                background-color: white;
+            }
+
+            .two-small-images {
+                display: inline-block;
+                width: 30%;
+                background-color: white;
+            }
+
+            .two-small-images img {
+                display: block;
+                width: 100%;
+                background-color: white;
+            }
+
+            .selection-card {
+                width: 15%;
+                display: inline-block;
+            }
+        </style>
+        <h2>Discover unique hand-picked items</h2>
+        <div class="item-names-strip">
+            <div class="item-name">
+                <span>Outdoor...</span>
+                <hr>
+            </div>
+            <div class="item-name">
+                <span>Batch &amp; beauty gifts</span>
+                <hr>
+            </div>
+            <div class="item-name">
+                <span>Wedding planning</span>
+                <hr>
+            </div>
+            <div class="item-name">
+                <span>Sustainability</span>
+                <hr>
+            </div>
+            <div class="item-name">
+                <span>DYI updates</span>
+                <hr>
+            </div>
+            <div class="item-name">
+                <span>Art finds</span>
+                <hr>
+            </div>
+        </div>
+
+        <div class="images-and-prices">
+
+            <div class="three-images">
+                <img src="https://via.placeholder.com/680x540" alt=""class="large-image">
+                <div class="two-small-images">
+                    <img src="https://via.placeholder.com/580x540" alt="Image">
+                    <img src="https://via.placeholder.com/580x540" alt="Image">
+                </div>
+            </div>
+
+            <div class="three-images">
+                <img src="https://via.placeholder.com/680x540" alt=""class="large-image">
+                <div class="two-small-images">
+                    <img src="https://via.placeholder.com/580x540" alt="Image">
+                    <img src="https://via.placeholder.com/580x540" alt="Image">
+                </div>
+            </div>
+
+
+        </div>
+        
+    </section>
+    <!-- END OF HAND PICKED ITEMS SECTION -->
+
+    <!-- SHOP OUR SELECTION SECTION -->
+    <section class="shop-our-selection-section">
+        <style>
+            .shop-our-selection-section {
+                background-color: white;
+            }
+            .shop-our-selection-section p {
+                background-color: white;
+                text-align: left;
+                padding-top: 30px;
+                padding-bottom: 10px;
+                margin-left: 10px;
+            }
+
+            .shop-our-selection-section p span {
+                font-family: Arial, sans-serif;
+            }
+
+            .shop-our-selection-section p span:first-child {
+                font-weight: bold;
+            }
+            .selection-card {
+                background-color: white;
+                border-radius: 15px 15px 15px 15px; 
+                border: 1px rgb(238, 234, 234) solid;
+                margin-left: 10px;
+                margin-right: 5px;
+                height: 250px;
+                font-family: Arial, sans-serif;
+            }
+            .selection-card img {
+                background-color: white;
+                border-radius: 15px 15px 0px 0px; 
+                width: 100%;
+                display: block;
+            }
+
+        </style>
+        <p><span>Shop our selections </span> <span>Items hand-picked by our editors</span></p>
+        <div class="selection-card">
+            <img src="https://via.placeholder.com/580x540" alt="Image">
+            <p>Anniversary gifts</p>
+        </div>
+        <div class="selection-card">
+            <img src="https://via.placeholder.com/580x540" alt="Image">
+            <p>Gifts for him</p>
+        </div>
+        <div class="selection-card">
+            <img src="https://via.placeholder.com/580x540" alt="Image">
+            <p>Gifts for her</p>
+        </div>
+        <div class="selection-card">
+            <img src="https://via.placeholder.com/580x540" alt="Image">
+            <p>Personalized gift ideas</p>
+        </div>
+        <div class="selection-card">
+            <img src="https://via.placeholder.com/580x540" alt="Image">
+            <p>Wedding gifts</p>
+        </div>
+        <div class="selection-card">
+            <img src="https://via.placeholder.com/580x540" alt="Image">
+            <p>Housewarming gifts</p>
+        </div>
+
+    </section>
+    <!-- SHOP OUR SELECTION SECTION -->
+
+    <!-- WHAT IS ETSY SECTION -->
+    <section class="what-is-etsy-section">
+        <style>
+            .what-is-etsy-section {
+                background-color: #fdebd2;
+            }
+
+            .what-is-etsy-section h3, p, a {
+                background-color: #fdebd2;
+                text-align: center;
+            }
+
+            .what-is-etsy-section > h3 {
+                padding-top: 75px;
+                font-family: Arial, sans-serif;
+                font-size: 44px;
+                line-height: 48px;
+            }
+
+
+            .what-is-etsy-section button {
+                width: 20%;
+                margin: auto;
+            }
+
+            .what-is-etsy-section a {
+                background-color: #fdebd2;
+            }
+
+            .what-is-etsy-section p {
+                text-align: center;
+                background-color: #fdebd2;
+            }
+
+            .what-is-etsy-section div {
+                width: 80%;
+                margin: auto;
+                background-color: #fdebd2;
+            }
+
+            .what-is-etsy-section div div {
+                display: inline-block;
+                width: 33%;
+                background-color: #fdebd2;
+            }
+        </style>
+        <h3>What is Etsy?</h3>
+        <p><a href="">Read our wonderfully weird story</a></p>
+
+        <div>
+            <div>
+                <h3>A community doing good</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid explicabo maiores, optio ipsam laborum itaque excepturi qui iure magnam vel quae odit incidunt cumque ab voluptas possimus consequuntur molestias! Adipisci.
+            </div>
+            <div>
+                <h3>Support independent creators</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid explicabo maiores, optio ipsam laborum itaque excepturi qui iure magnam vel quae odit incidunt cumque ab voluptas possimus consequuntur molestias! Adipisci.
+            </div>
+            <div>
+                <h3>Peace of mind</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid explicabo maiores, optio ipsam laborum itaque excepturi qui iure magnam vel quae odit incidunt cumque ab voluptas possimus consequuntur molestias! Adipisci.
+            </div>
+
+        </div>
+        
+
+        <p>Have a question? Well, we’ve got some answers.</p>
+        <p>Go to help center</p>
+    </section>
+    <!-- END OF WHAT IS ETSY SECTION -->
+
+    <!-- EMAIL SUBSCRIPTION SECTION -->
+    <section class="email-subscription-section">
+        <style>
+            .email-subscription-section {
+                background-color: white;
+            }
+
+            .email-subscription-section p {
+                padding-top: 200px;
+                font-family: Arial, sans-serif;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                padding-bottom: 10px;
+            }
+
+            .email-subscription-section form {
+                text-align: center;
+            }
+            .email-subscription-section form, input[type="text"], input[type="submit"], p, div, span {
+                background-color: white;
+            }
+
+            .email-subscription-section form input[type="text"] {
+                background-color: white !important;
+            }
+
+            .email-subscription-section form input[type="submit"] {
+                background-color: white !important;
+                width: 150px;
+                border-left: none;
+                font-weight: bold;
+            }
+
+            .email-subscription-section div {
+                text-align: center;
+                padding-top: 75px;
+            }
+
+            .email-subscription-section div span {
+                font-family: Arial, sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+            }
+
+        </style>
+        <p>Yes! Send me exclusive offers, unique gift ideas, and personalized tips for shopping and selling on Etsy.</p>
+        <form action="">
+            <input type="text" placeholder="   Enter your email">
+            <input type="submit" value="Subscribe">
+        </form>
+        <div>
+            <span>&#127794;</span> <span>Etsy is powered by 100% renewable electricity.</span>
+        </div>
+        
+    </section>    
+    <!-- END OF EMAIL SUBSCRIPTION SECTION -->
+
+    <!-- SHOP SELL ABOUT HELP SECTION -->
+    <section class="shop-sell-about-help">
+        <style>
+            .shop-sell-about-help {
+                text-align: center;
+                color: white;
+                background-color: blue;
+                height: 30vh;
+                font-family: Arial, sans-serif;
+            }
+
+            .shop-sell-about-help div {
+                display: inline-block;
+                width: 20%;
+                position: relative;
+                color: inherit;
+                background-color: blue;
+            }
+
+            .shop-sell-about-help div ol {
+                list-style-type: none;
+                position: absolute;
+                top: 2px;
+                color: inherit;
+                background-color: blue;
+            }
+
+            .shop-sell-about-help div ol li {
+                background-color: blue;
+                color: inherit;
+            }
+
+            .shop-sell-about-help div ol li a {
+                text-decoration: none;
+                background-color: blue;
+            }
+            
+
+            .shop-sell-about-help div ol li:first-child {
+                font-weight: bold;
+                text-decoration: none;
+            }
+        </style>
+
+        <div>
+            <ol>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Gift cards</a></li>
+                <li><a href="">Etsy blog</a></li>
+            </ol>
+        </div>
+        <div>
+            <ol>
+                <li><a href="">Sell</a></li>
+                <li><a href="">Sell on Etsy</a></li>
+                <li><a href="">Teams</a></li>
+                <li><a href="">Forums</a></li>
+                <li><a href="">Affiliates</li>
+            </ol>
+        </div>
+        <div>
+            <ol>
+                <li>About</li>
+                <li>Etsy, Inc.</li>
+                <li>Policies</li>
+                <li>Investors</li>
+                <li>Careers</li>
+                <li>Press</li>
+                <li>Impact</li>
+                <li>Legal imprint</li>
+            </ol>
+        </div>
+        <div>
+            <ol>
+                <li>Help</li>
+                <li>Help Center</li>
+                <li>Trust and safety</li>
+                <li>Privacy settings</li>
+                <li>&nbsp;</li>
+                <li>Download the Etsy App</li>
+                <li>&#127909;&#127917;&#127919;&#128036;&#128250;</li>
+            </ol>
+        </div>
+    </section>
+    <!-- END OF SHOP SELL ABOUT HELP SECTION -->
+
+    <!-- FOOTER -->
+    <footer>
+        <style>
+            footer {
+                height: 15vh;
+                background-color:rgb(15, 3, 68);
+                position: relative;
+            }
+            footer p {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+                width: 20%;
+                border-radius: 15px;
+                position: absolute;
+                left: 10px;
+                top: 30px;
+                color: white;
+                background-color: transparent;
+            }
+
+            footer p:hover {
+                background-color: rgb(27, 4, 133);
+            }
+
+            footer span {
+                width: 35%;
+                position: absolute;
+                right: 10px;
+                top: 30px;
+                color: white;
+                background-color: transparent;
+            }
+        </style>
+        <p> &#127477;&#127481;&nbsp;&nbsp;Portugal | English (US) | € (EUR)</p>
+
+        <span>© 2021 Etsy, Inc.   Terms of Use Privacy Cookies Interest-based ads</span>
+
+    </footer>
+
+    <!-- END OF FOOTER -->
+    
+    
+</body>
+</html>

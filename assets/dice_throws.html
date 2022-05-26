@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Throws</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+</head>
+<body>
+
+    <p id="diceThrows" style="overflow-wrap: break-word;font-size: 20px;"></p>
+    
+    <script>
+
+        function getRandomIntegerBetween( minNumber, maxNumber ) {
+            return Math.floor(Math.random() * maxNumber) + minNumber;
+        }
+        function diceFaceSymbol( diceFaceNumber ) {
+
+            let diceFaceSymbol = "";
+
+            switch( diceFaceNumber ) {
+                case 1:
+                    diceFaceSymbol = "⚀";
+                    break;
+                case 2:
+                    diceFaceSymbol = "⚁";
+                    break;
+                case 3:
+                    diceFaceSymbol = "⚂";
+                    break;
+                case 4:
+                    diceFaceSymbol = "⚃";
+                    break;
+                case 5:
+                    diceFaceSymbol = "⚄";
+                    break;
+                case 6:
+                    diceFaceSymbol = "⚅";
+                    break;
+
+                default:
+                    diceFaceSymbol = "Dice face symbol not found!";
+                    break;
+            }
+
+            return diceFaceSymbol;
+        }
+        function addThrowToResults( resultsArray, randomDiceThrow ) {
+
+            switch( randomDiceThrow ) {
+                case 1:
+                    resultsArray[0] = resultsArray[0] + 1;
+                    break;
+                case 2:
+                    resultsArray[1] = resultsArray[1] + 1;
+                    break;
+                case 3:
+                    resultsArray[2] = resultsArray[2] + 1;
+                    break;
+                case 4:
+                    resultsArray[3] = resultsArray[3] + 1;
+                    break;
+                case 5:
+                    resultsArray[4] = resultsArray[4] + 1;
+                    break;
+                case 6:
+                    resultsArray[5] = resultsArray[5] + 1;
+                    break;
+            }
+
+            return resultsArray;
+
+        }
+        
+        const minimumDiceFaceValue  = 1;
+        const maximumDiceFaceValue  = 6;
+
+        const numberOfDiceThrows    = prompt( "How many dice do you want to throw?");
+        //const numberOfDiceThrows    = 1000;
+
+        let numberOfFaces = [0, 0, 0, 0, 0, 0];
+
+        let diceThrowsString = "";
+        for ( let i = 0; i < numberOfDiceThrows; i++) {
+
+            const randomDiceFaceNumber = getRandomIntegerBetween( minimumDiceFaceValue, maximumDiceFaceValue );
+            
+            const diceFace = diceFaceSymbol( randomDiceFaceNumber );
+
+            const r = getRandomIntegerBetween( 1, 255 );
+            const g = getRandomIntegerBetween( 1, 255 );
+            const b = getRandomIntegerBetween( 1, 255 );
+
+            diceThrowsString += `<span style="color: rgb(${r},${g},${b});">${diceFace}</span>`;// + diceFace + '</span>';
+
+            numberOfFaces = addThrowToResults( numberOfFaces, randomDiceFaceNumber );
+        }
+
+        document.getElementById("diceThrows").innerHTML = diceThrowsString;
+
+    </script>
+
+    <canvas id="myChart" width="400" height="400"></canvas>
+    <script>
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['1', '2', '3', '4', '5', '6'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: numberOfFaces,
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+    </script>
+
+    <script>
+
+        // VILLAGE OF 100 PEOPLE VS INTERNET OF 7 BILLION, COMPARISON OF MAXIMUM WITH
+        // AVERAGE HAPPINESS
+        const howManyDice   = 10;       // EACH PERSON HAS A NUMBER OF LIFE AREAS
+        const howManyThrows = 10000;   // HOW MANY PEOPLE DO YOU WANT TO MODEL?
+        const minDiceValue  = 1;        // MINIMUM CLASSIFICATION OF A LIFE AREA
+        const maxDiceValue  = 6;       // MAXIMUM CLASSIFICATION OF A LIFE AREA
+        const minSum        = howManyDice * minDiceValue; // EXTREME UNHAPPINESS
+        const maxSum        = howManyDice * maxDiceValue; // EXTREME HAPPINESS
+
+        let resultsArray = [];
+
+        for ( let i = 0; i < howManyThrows; i++ ) {
+            let throwSum = 0;
+            for ( let j = 0; j < howManyDice; j++ ) {
+                throwSum += getRandomIntegerBetween( minDiceValue, maxDiceValue);
+            }
+
+            ( Number.isInteger(resultsArray[throwSum]) ) ? resultsArray[throwSum] += 1: resultsArray[throwSum] = 1; 
+        }
+
+        console.log(resultsArray);
+        let numberOfNonResults = 0;
+
+        let labelsArray = [];
+        let sumsArray = [];
+
+        for ( let k = 0; k < resultsArray.length; k++ ) {
+
+            ( Number.isInteger(resultsArray[k]) ) ? labelsArray.push('' + k): numberOfNonResults++; 
+            ( Number.isInteger(resultsArray[k]) ) ? sumsArray.push(resultsArray[k]): numberOfNonResults++; 
+
+        }
+
+        console.log(labelsArray);
+        console.log(sumsArray);
+
+        
+    </script>
+
+<canvas id="myChart2" width="400" height="400"></canvas>
+<script>
+        var ctx = document.getElementById('myChart2').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labelsArray,
+                datasets: [{
+                    label: '# of Votes',
+                    data: sumsArray,
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+</script>
+</body>
+</html>

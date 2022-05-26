@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+</head>
+<body>
+    <form action="" id="cellphone">
+        <style>
+            form#cellphone {
+                height:400px;
+                width:200px;
+                background-color: black;
+                border-radius: 15px;
+                position: relative;
+            }
+        </style>
+        <div id="innerphone">
+            <style>
+                #innerphone {
+                    height: 94%;
+                    width: 94%;
+                    border: 1px solid lightgrey;
+                    border-radius: 15px;
+                    margin: auto;
+                    position: absolute;
+                    top: 2%;
+                    bottom: 3%;
+                    left: 2%;
+                    right: 3%;
+                }
+                hr {
+                    width: 15%;
+                    color: lightgrey;
+                    margin: auto;
+                    margin-top: 2%;
+                }
+                h1 {
+                    text-align: center;
+                    color: lightgrey;
+                    margin: auto;
+                    font-size: 16px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    margin-top: 2%;
+                }
+                textarea {
+                    background-color: black;
+                    color: grey;
+                    border: 1px solid lightgrey;
+                    position: absolute;
+                    top: 10%;
+                    left: 3%;
+                    right: 3%;
+                    resize: none;
+                }
+            </style>
+            <hr>
+            <h1>NOKIA</h1>
+            <textarea id="screen" name="screen" rows="13" cols="18">...</textarea>
+            <div id="buttons">
+                <style>
+                    #buttons {
+                        position: absolute;
+                        top: 70%;
+                        border: 1px solid lightgrey;
+                        margin-left: 3%;
+                        margin-right: 3%;
+                        width: 93%;
+                        height: 28%;
+                    }
+                </style>
+                <div id="top_buttons">
+                    <style>
+                        #top_buttons {
+                            height: 25%;
+                            width: 100%;
+                            border: 1px solid lightgrey;
+                            display: inline-flex;
+                        }
+                    </style>
+                    <div id="top_buttons_left">
+                        <style>
+                            #top_buttons_left {
+                                height: 100%;
+                                width: 32%;
+                                border: 1px solid lightgrey;
+                            }
+
+                        </style>
+
+
+                    </div> <!-- END OF LEFT TOP BUTTONS -->
+                    <div id="top_buttons_center">
+                        <style>
+                            #top_buttons_center {
+                                height: 100%;
+                                width: 32%;
+                                border: 1px solid lightgrey;
+                            }
+
+                        </style>
+
+
+                    </div> <!-- END OF CENTER TOP BUTTONS -->
+                    <div id="top_buttons_right">
+                        <style>
+                            #top_buttons_right {
+                                height: 100%;
+                                width: 32%;
+                                border: 1px solid lightgrey;
+                            }
+
+                        </style>
+
+
+                    </div> <!-- END OF RIGHT TOP BUTTONS -->
+
+
+                </div> <!-- END OF TOP BUTTONS -->
+                <style>
+                    .grid-container {
+                        display: grid;
+                        grid-template-columns: auto auto auto;
+                        background-color: black;
+
+                    }
+                    .grid-item {
+                        background-color: rgba(255, 255, 255, 0.8);
+                        border: 1px solid rgba(0, 0, 0, 0.8);
+
+                        text-align: center;
+                    }
+                </style>
+                <div class="grid-container">
+                    
+                    <button class="grid-item" id="btn1" type="button">1</button>
+                    <button class="grid-item" id="btn2" type="button">2abc</button>
+                    <button class="grid-item" id="btn3" type="button">3def</button>
+                    <button class="grid-item" id="btn4" type="button">4ghi</button>
+                    <button class="grid-item" id="btn5" type="button">5jkl</button>
+                    <button class="grid-item" id="btn6" type="button">6mno</button>
+                    <button class="grid-item" id="btn7" type="button">7pqrs</button>
+                    <button class="grid-item" id="btn8" type="button">8tuv</button>
+                    <button class="grid-item" id="btn9" type="button">9wxyz</button>
+                    <button class="grid-item" id="btnast" type="button">*</button>
+                    <button class="grid-item" id="btn0" type="button">0</button>
+                    <button class="grid-item" id="btnpound" type="button">#</button>
+                  </div>
+
+            </div> <!-- END OF BUTTONS -->
+            <script>
+                document.getElementById('btn2').addEventListener('click', () => {
+                    let presentValue = document.getElementById('screen').value.toString();
+
+                    document.getElementById('screen').innerHTML = presentValue + 'a';
+                    const lastLetter = presentValue[presentValue.length-1];
+                    if (lastLetter === 'a') {
+                        document.getElementById('screen').innerHTML = presentValue.slice(0, presentValue.length-1) +'b';
+                    }
+                    if (lastLetter === 'b') {
+                        document.getElementById('screen').innerHTML = presentValue.slice(0, presentValue.length-1) +'c';
+                    }
+                    if (lastLetter === 'c') {
+                        document.getElementById('screen').innerHTML = presentValue.slice(0, presentValue.length-1) +'a';
+                    }
+                });
+
+                document.getElementById('btn3').addEventListener('click', () => {
+                    let presentValue = document.getElementById('screen').value.toString();
+
+                    document.getElementById('screen').innerHTML = presentValue + 'd';
+                    const lastLetter = presentValue[presentValue.length-1];
+                    if (lastLetter === 'd') {
+                        document.getElementById('screen').innerHTML = presentValue.slice(0, presentValue.length-1) +'e';
+                    }
+                    if (lastLetter === 'e') {
+                        document.getElementById('screen').innerHTML = presentValue.slice(0, presentValue.length-1) +'f';
+                    }
+                    if (lastLetter === 'f') {
+                        document.getElementById('screen').innerHTML = presentValue.slice(0, presentValue.length-1) +'d';
+                    }
+                });
+            </script>
+
+        </div>
+    </form>
+
+    <script>
+        $( function() {
+          $( "#cellphone" ).draggable();
+        } );
+    </script>
+    
+</body>
+</html>
