@@ -7,10 +7,24 @@
     <link rel="image_src" href="https://www.mediafire.com/convkey/20b7/2mc353z2ovvh4817g.jpg"/>
     <title>Retro Cell Phone Message Encrypter</title>
     <meta name="description" content="Send fun and nostalgic messages to your friends. Just copy and paste to your website or app of choice!">
+    <script src='https://html2canvas.hertzen.com/dist/html2canvas.min.js'></script>
 </head>
-<body>
-    <pre>
-    <code>
+<body id="capture" style="font-family: Arial;">
+    <p>Send a secret message to your friends! 😎</p>
+    <p>🔄 Reload the page</p>
+    <p>📧 Insert a simple message only with letters and spaces</p>
+    <p>📥 Save the image with a nice name (ex: to_you.png)</p>
+    <p>💌 Send the image to your friends</p>
+    <p>💭 Receiver has to work for the message!</p>
+    <div id="clues_and_message" style="width: max-content;padding: 15px; padding-bottom: 30px;"">
+    </div>
+
+    <script>
+
+        function initializeCellPhoneStr() {
+            const cellPhoneStr = `
+<pre>
+<code>
  ________________
 |                |
 |                |
@@ -28,27 +42,41 @@
 |7pqrs|8tuv|9wxyz|
 |*    |0   |#    |
  ________________
-    </code>
-    </pre>
-    <pre id="encrypted"></pre>
+ </code>
+ </pre>
+ <pre id="encrypted"></pre>`;
 
-    <script>
-        const stringToEncript = prompt('Insert ASCII characters message\nseparated by spaces:');
+            document.getElementById('clues_and_message').innerHTML = cellPhoneStr;
+        }
+
+        initializeCellPhoneStr();
+
+        // INITIALIZE AND GET THE STRING TO ENCRYPT
+        let stringToEncript = '';
+        stringToEncript = prompt('Insert a message only with\nsimple letters separated by spaces:');
+
+        function replaceNonAsciiCharacters(stringToEncript) {
+            let onlyAsciiCharactersMessage = '';
+
+            onlyAsciiCharactersMessage = stringToEncript
+                .replace(/á|à|â|ã/gi, 'a')
+                .replace(/é|è/gi, 'e')
+                .replace(/í|ì/gi, 'i')
+                .replace(/ó|ò|ô/gi, 'o')
+                .replace(/ú/gi, 'u')
+                .replace(/ç/gi, 'c')
+                .replace(/-/gi, ' ')
+                .replace(/[^A-Za-z]/gi, ' ')
+                .trim();
+
+            return onlyAsciiCharactersMessage;
+        }
+
+        stringToEncript = replaceNonAsciiCharacters(stringToEncript);
+
+
+
         function retroCellphoneEncription( stringToEncript ) {
-            console.log(' ________________');
-            console.log('|                |');
-            console.log('|                |');
-            console.log('|                |');
-            console.log('|                |');
-            console.log('|                |');
-            console.log('|                |');
-            console.log('|                |');
-            console.log(' ________________ ');
-            console.log('|1    |2abc|3def |');
-            console.log('|4ghi |5jkl|6mno |');
-            console.log('|7pqrs|8tuv|9wxyz|');
-            console.log('|*    |0   |#    |');
-            console.log('__________________');
 
             const letters = 'abcdefghijklmnopqrstuvwxyz ';
 
@@ -93,9 +121,9 @@
                 
 
             });
+
             encriptedString = encriptedString.substring(0, encriptedString.length-1);
     
-
             return encriptedString;
 
         }
@@ -106,7 +134,12 @@
             document.getElementById('encrypted').innerHTML += '<p>'+ word + '</p>'
         });
 
-        
+        html2canvas(document.querySelector("#clues_and_message")).then(canvas => {
+            document.body.appendChild(canvas)
+        });
+
+        document.getElementById('clues_and_message').style.display = 'none';
+
     </script>
     
 </body>
