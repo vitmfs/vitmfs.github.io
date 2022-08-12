@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="image_src" href="https://www.mediafire.com/convkey/20b7/2mc353z2ovvh4817g.jpg"/>
+    <link rel="shortcut icon" type="image/jpg" href="https://www.mediafire.com/convkey/d4b9/z1rnsp8txmv049h9g.jpg"/>
     <title>Retro Cell Phone Message Encrypter</title>
     <meta name="description" content="Send fun and nostalgic messages to your friends. Just copy and paste to your website or app of choice!">
     <script src='https://html2canvas.hertzen.com/dist/html2canvas.min.js'></script>
@@ -15,13 +16,17 @@
     <p>📧 Insert a simple message only with letters and spaces</p>
     <p>📥 Save the image with a nice name (ex: to_you.png)</p>
     <p>💌 Send the image to your friends</p>
-    <p>💭 Receiver has to work for the message</p>
+    <p>💭 Receiver has to work for the message!</p>
     <div id="clues_and_message" style="width: max-content;padding: 15px; padding-bottom: 30px;"">
     </div>
 
+    <!-- JAVASCRIPT -->
     <script>
 
-        function initializeCellPhoneStr() {
+        // FUNCTIONS
+        function initializeCellPhoneStr(screenMessage) {
+            const screenMessageLine = screenMessage;
+
             const cellPhoneStr = `
 <pre>
 <code>
@@ -31,6 +36,7 @@
 |                |
 |                |
 |                |
+${screenMessageLine}
 |                |
 |                |
 |                |
@@ -46,14 +52,8 @@
  </pre>
  <pre id="encrypted"></pre>`;
 
-            document.getElementById('clues_and_message').innerHTML = cellPhoneStr;
+            return cellPhoneStr;
         }
-
-        initializeCellPhoneStr();
-
-        // INITIALIZE AND GET THE STRING TO ENCRYPT
-        let stringToEncript = '';
-        stringToEncript = prompt('Insert a message only with\nsimple letters separated by spaces:');
 
         function replaceNonAsciiCharacters(stringToEncript) {
             let onlyAsciiCharactersMessage = '';
@@ -72,10 +72,6 @@
             return onlyAsciiCharactersMessage;
         }
 
-        stringToEncript = replaceNonAsciiCharacters(stringToEncript);
-
-
-
         function retroCellphoneEncription( stringToEncript ) {
 
             const letters = 'abcdefghijklmnopqrstuvwxyz ';
@@ -91,9 +87,8 @@
             const _0    = '0 ';
 
             let encriptedString = '';
-            
-            stringToEncript.split('').forEach( (char) => {
-                char = char.toLowerCase();
+
+            stringToEncript.toLowerCase().split('').forEach( (char) => {
                 let key = ''
                 let numberOfKeyPresses = 0;
                 if ( letters.includes(char) ) {
@@ -123,18 +118,33 @@
             });
 
             encriptedString = encriptedString.substring(0, encriptedString.length-1);
-    
+
             return encriptedString;
 
         }
+        // END OF FUNCTIONS
+        
+        
+        // MAIN PROGRAM LOGIC
+        
 
+        // INITIALIZE AND GET THE STRING TO ENCRYPT
+        const originalStringToEncript = prompt('Insert a message only with\nsimple letters separated by spaces:');
 
+        let stringToEncript = originalStringToEncript || '';
+
+        stringToEncript = replaceNonAsciiCharacters(stringToEncript);
+
+        const screenMessageLine = '|YOU\'VE GOT MAIL!|';
+
+        document.getElementById('clues_and_message').innerHTML = initializeCellPhoneStr(screenMessageLine);
 
         retroCellphoneEncription( stringToEncript ).split(' ').forEach( (word) => {
             document.getElementById('encrypted').innerHTML += '<p>'+ word + '</p>'
         });
 
         html2canvas(document.querySelector("#clues_and_message")).then(canvas => {
+            canvas.title = `Image for the encrypted message from:\n${originalStringToEncript}`;
             document.body.appendChild(canvas)
         });
 
