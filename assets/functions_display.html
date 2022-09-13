@@ -868,12 +868,14 @@
             letters.has('a');       // false
             letters.values();       // {'b', 'c', 'd'}
             letters.size;           // 3
-            letters.keys();           //
-            letters.entries();        // 
+            letters.keys();         //
+            letters.entries();      // 
             letters.forEach( (e) => {console.log(e);});
             
             Array.from(letters);    // ['b', 'c', 'd']
-            letters.clear();         //
+            letters.clear();        //
+            typeof letters;         // Returns object
+            letters instanceof Set; // Returns true
             
         }
         functionsArray.push(setDemo);
