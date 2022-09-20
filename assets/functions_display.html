@@ -1622,6 +1622,62 @@
             return true;
         }
         functionsArray.push(isPrime);
+        
+        function bindAndBorrowingDemo() {
+            
+            const person = {
+              firstName:"John",
+              lastName: "Doe",
+              fullName: function () {
+                return this.firstName + " " + this.lastName;
+              }
+            }
+
+            const member = {
+              firstName:"Hege",
+              lastName: "Nilsen",
+            }
+
+            let fullName = person.fullName.bind(member);
+            
+            
+            const person2 = {
+              firstName:"John",
+              lastName: "Doe",
+              display: function () {
+                let x = document.getElementById("demo");
+                x.innerHTML = this.firstName + " " + this.lastName;
+              }
+            }
+            person2.display();
+            
+            const person3 = {
+              firstName:"John",
+              lastName: "Doe",
+              display: function () {
+                let x = document.getElementById("demo");
+                x.innerHTML = this.firstName + " " + this.lastName;
+              }
+            }
+
+            setTimeout(person3.display, 3000);
+            
+            const person4 = {
+              firstName:"John",
+              lastName: "Doe",
+              display: function () {
+                let x = document.getElementById("demo");
+                x.innerHTML = this.firstName + " " + this.lastName;
+              }
+            }
+
+            let display = person4.display.bind(person4);
+            setTimeout(display, 3000);
+            
+            // https://www.w3schools.com/js/js_function_bind.asp
+        
+        }
+        functionsArray.push(bindAndBorrowingDemo);
 
         
         
