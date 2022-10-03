@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="image_src" href="https://www.mediafire.com/convkey/20b7/2mc353z2ovvh4817g.jpg"/>
+    <link rel="shortcut icon" type="image/jpg" href="https://www.mediafire.com/convkey/d4b9/z1rnsp8txmv049h9g.jpg"/>
+    <title>Retro Cell Phone Message Encrypter</title>
+    <meta name="description" content="Send fun and nostalgic messages to your friends. Just copy and paste to your website or app of choice!">
+    <script src='https://html2canvas.hertzen.com/dist/html2canvas.min.js'></script>
+</head>
+<body id="capture" style="font-family: Arial;">
+    <p>Send a secret message to your friends! 😎</p>
+    <p>🔄 Reload the page</p>
+    <p>📧 Insert a simple message only with letters and spaces</p>
+    <p>📥 Save the image with a nice name (ex: to_you.png)</p>
+    <p>💌 Send the image to your friends</p>
+    <p>💭 Receiver has to work for the message!</p>
+
+    <textarea name="original_message_ta" id="original_message_ta" cols="30" rows="10" title="Original Text">
+    </textarea>
+
+    <textarea name="letters_to_numbers_ta" id="letters_to_numbers_ta" cols="30" rows="10" disabled>
+    </textarea>
+
+    <textarea name="aix_to_ufux_ta" id="aix_to_ufux_ta" cols="30" rows="10" disabled>
+    </textarea>
+
+    <textarea name="blender_ta" id="blender_ta" cols="30" rows="10" disabled>
+    </textarea>
+
+    <textarea name="reverse_ta" id="reverse_ta" cols="30" rows="10" disabled>
+    </textarea>
+
+    <textarea name="words_reversed_ta" id="words_reversed_ta" cols="30" rows="10" disabled>
+    </textarea>
+
+    <textarea name="replaced_vowels_ta" id="replaced_vowels_ta" cols="30" rows="10" disabled>
+    </textarea>
+
+    <div id="clues_and_message" style="width: max-content;padding: 15px; padding-bottom: 30px; clear: both;"">fdg
+    </div><br />
+
+    
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        const originalStringToEncript = prompt('Insert a message only with\nsimple letters separated by spaces:');
+
+        let stringToEncript = originalStringToEncript || '';
+
+        stringToEncript = replaceNonAsciiCharacters(stringToEncript);
+
+        function replaceVowels( word, charToReplaceVowels ) {
+
+            return word.length <= 2 ? word : word.replace(/a|e|i|o|u/gi, charToReplaceVowels);
+        }
+
+        function reverseWord( wordToReverse ) {
+            let lastCharacter= '';
+            if (pontuationCharacterAtTheEnd( wordToReverse )) {
+                lastCharacter = wordToReverse[wordToReverse.length-1];
+                wordToReverse = wordToReverse.substring(0, wordToReverse.length-1);
+            }
+
+            return wordToReverse.split('').reverse().join('') + lastCharacter;
+        }
+
+        function pontuationCharacters() {
+            return  '.!?,';
+        }
+
+        function pontuationCharacterAtTheEnd( text ) {
+            return pontuationCharacters().includes(text[text.length-1]);
+        }
+
+        function pontuationCharacterAtTheStart( text ) {
+            return pontuationCharacters().includes(text[0]);
+        }
+
+        function savePontuationIndexes( text ) {
+            const characterIndexes = [];
+
+            const pontCharacters = pontuationCharacters();
+
+            const textLength = text.length;
+            for (let i = 0; i < textLength; i++) {
+
+                if (pontCharacters.includes(text[i])) {
+                    characterIndexes.push([text[i], i]);
+                }
+
+            }
+
+            return characterIndexes;
+        }
+        function shuffleWord( word ) {
+
+            let lastCharacter = '';
+
+            if (pontuationCharacterAtTheEnd( word )) {
+                lastCharacter = word[word.length-1];
+                word = word.substring(0, word.length-1);
+            }
+
+            const originalWord  = word;
+            let shuffledWord    = word.split('').sort(() => Math.random() - 0.5).join('');
+
+            // if (originalWord === shuffledWord) {
+            //     shuffledWord = shuffleWord( shuffledWord );
+            // }
+            shuffledWord += lastCharacter;
+            return shuffledWord;
+        }
+
+        function returnToDefaultVogals( word ) {
+
+            let changedWord = word;
+            changedWord = 
+                changedWord
+                .replace(/AIX/gi, 'A')
+                .replace(/aix/gi, 'a')
+
+                .replace(/ENDER/gi, 'E')
+                .replace(/ender/gi, 'e')
+
+                .replace(/INIX/gi, 'I')
+                .replace(/inix/gi, 'i')
+
+                .replace(/OVER/gi, 'O')
+                .replace(/over/gi, 'o')
+                
+                .replace(/UFUX/gi, 'U')
+                .replace(/ufux/gi, 'u')
+
+            return changedWord;
+        }
+
+        function aixToUfux( word ) {
+
+            let changedWord = '';
+            //changedWord = returnToDefaultVogals( changedWord );
+
+            for ( let i = 0; i < word.length; i++) {
+                switch(word[i]) {
+
+                    case 'a':
+                    case 'á':
+                    case 'à':
+                    case 'â':
+                    case 'ã':
+                    changedWord += 'aix';
+                        break;
+                    case 'A':
+                    case 'Á':
+                    case 'À':
+                    case 'Â':
+                    case 'Ã':
+                    changedWord += 'AIX';
+                        break;
+                    
+                    case 'e':
+                    case 'é':
+                    case 'è':
+                    changedWord += 'ender';
+                        break;
+                    case 'E':
+                    case 'É':
+                    case 'È':
+                    changedWord += 'ENDER';
+                        break;
+                    
+                    case 'i':
+                    case 'í':
+                    case 'ì':
+                    changedWord += 'inix';
+                        break;
+                    case 'I':
+                    case 'Í':
+                    case 'Ì':
+                    changedWord += 'INIX';
+                        break;
+                    
+                    case 'o':
+                    case 'ó':
+                    case 'ò':
+                    changedWord += 'over';
+                        break;
+                    case 'O':
+                    case 'Ó':
+                    case 'Ò':
+                    changedWord += 'OVER';
+                        break;
+                    
+                    case 'u':
+                    changedWord += 'ufux';
+                        break;
+                    case 'U':
+                    changedWord += 'UFUX';
+                        break;
+                    
+                    default:
+                    changedWord += word[i];
+                        break;
+                }
+            }
+            // changedWord = 
+            //     changedWord
+            //     //.replace(/A|Á|À|Â|Ã/gi, 'AIX')
+            //     .replace(/a|á|à|â|ã/gi, 'aix')
+
+            //     //.replace(/E|É|È/gi, 'ENDER')
+            //     .replace(/e|é|è/gi, 'ender')
+
+            //     //.replace(/I|Í|Ì/gi, 'INIX')
+            //     //.replace(/i|í|ì/gi, 'inix')
+
+            //     //.replace(/O|Ó|Ò/gi, 'OVER')
+            //     //.replace(/o|ó|ò/gi, 'over')
+
+                
+            //     //.replace(/U/gi, 'UFUX')
+            //     //.replace(/u/gi, 'ufux')
+                
+
+            return changedWord;
+
+        }
+
+        function letterToNumbers( upperCasedWord ) {
+
+            let changedWord = upperCasedWord;
+            changedWord = 
+                changedWord
+                .replace(/A|Á|À|Â|Ã|a|á|à|â|ã/gi, '4')
+                .replace(/E|É|È|e|é|è/gi, '3')
+                .replace(/I|Í|Ì|i|í|ì/gi, '1')
+                .replace(/O|Ó|Ò|o|ó|ò/gi, '0')
+                .replace(/S|s/gi, '5')
+                .replace(/T|t/gi, '7');
+            //console.log( changedWord );
+            return changedWord;
+
+        }
+
+        const om = document.getElementById('original_message_ta');
+        const au = document.getElementById('aix_to_ufux_ta');
+        const ba = document.getElementById('blender_ta');
+        const rt = document.getElementById('reverse_ta');
+        const wrta = document.getElementById('words_reversed_ta');
+        const rv_ta = document.getElementById('replaced_vowels_ta');
+
+
+
+
+        const ta = document.getElementById('letters_to_numbers_ta');
+        om.addEventListener('keyup', (event) => {
+
+            const initialText = om.value;
+            const upperCasedText = initialText.toUpperCase();
+            ta.value = letterToNumbers( upperCasedText );
+            // au.value = aixToUfux( initialText );
+            ba.value = '';
+            rv_ta.value = '';
+
+            let rwtaText = '';
+            initialText.split(' ').forEach( (word) => {
+
+                let suffledWord = shuffleWord( word );
+                // console.log(word, suffledWord);
+                if (word.length >= 2 && word === suffledWord ) {
+                    while (word === suffledWord) {
+                        suffledWord = shuffleWord( word );
+                    }
+                }
+                // while ( word === suffledWord) {
+                //     suffledWord = shuffleWord( word )
+                // }
+                ba.value += suffledWord + ' ';
+
+                rwtaText += reverseWord( word ) + ' ';
+
+                rv_ta.value += replaceVowels( word, '*' ) + ' ';
+                console.log(word);
+                
+
+
+            });
+            rt.value = initialText.split('').reverse().join('');
+            wrta.value = rwtaText;
+
+            console.log(savePontuationIndexes( initialText ));
+            au.value = aixToUfux( initialText );
+        });
+
+        
+
+
+        // FUNCTIONS
+        function initializeCellPhoneStr(screenMessage) {
+            const screenMessageLine = screenMessage;
+
+            const cellPhoneStr = `
+<pre>
+<code>
+ ________________
+|                |
+|                |
+|                |
+|                |
+|                |
+${screenMessageLine}
+|                |
+|                |
+|                |
+|                |
+|                |
+ ________________ 
+|1    |2abc|3def |
+|4ghi |5jkl|6mno |
+|7pqrs|8tuv|9wxyz|
+|*    |0   |#    |
+ ________________
+ </code>
+ </pre>
+ <pre id="encrypted"></pre>`;
+
+            return cellPhoneStr;
+        }
+
+        function replaceNonAsciiCharacters(stringToEncript) {
+            let onlyAsciiCharactersMessage = '';
+
+            onlyAsciiCharactersMessage = stringToEncript
+                .replace(/á|à|â|ã/gi, 'a')
+                .replace(/é|è/gi, 'e')
+                .replace(/í|ì/gi, 'i')
+                .replace(/ó|ò|ô/gi, 'o')
+                .replace(/ú/gi, 'u')
+                .replace(/ç/gi, 'c')
+                .replace(/-/gi, ' ')
+                .replace(/[^A-Za-z]/gi, ' ')
+                .trim();
+
+            return onlyAsciiCharactersMessage;
+        }
+
+        function retroCellphoneEncription( stringToEncript ) {
+
+            const letters = 'abcdefghijklmnopqrstuvwxyz ';
+
+            const abc2  = '2abc';
+            const def3  = '3def';
+            const ghi4  = '4ghi';
+            const jkl5  = '5jkl';
+            const mno6  = '6mno';
+            const pqrs7 = '7pqrs';
+            const tuv8  = '8tuv';
+            const wxyz9 = '9wxyz';
+            const _0    = '0 ';
+
+            let encriptedString = '';
+
+            stringToEncript.toLowerCase().split('').forEach( (char) => {
+                let key = ''
+                let numberOfKeyPresses = 0;
+                if ( letters.includes(char) ) {
+                    if (abc2.includes(char) ) { key = abc2[0]; numberOfKeyPresses = abc2.indexOf(char) }
+                    if (def3.includes(char) ) { key = def3[0]; numberOfKeyPresses = def3.indexOf(char) }
+                    if (ghi4.includes(char) ) { key = ghi4[0]; numberOfKeyPresses = ghi4.indexOf(char) }
+                    if (jkl5.includes(char) ) { key = jkl5[0]; numberOfKeyPresses = jkl5.indexOf(char) }
+                    if (mno6.includes(char) ) { key = mno6[0]; numberOfKeyPresses = mno6.indexOf(char) }
+                    if (pqrs7.includes(char)) { key = pqrs7[0]; numberOfKeyPresses = pqrs7.indexOf(char) }
+                    if (tuv8.includes(char) ) { key = tuv8[0]; numberOfKeyPresses = tuv8.indexOf(char) }
+                    if (wxyz9.includes(char)) { key = wxyz9[0]; numberOfKeyPresses = wxyz9.indexOf(char) }
+                }
+                
+
+                for (let i = 1; i <= numberOfKeyPresses; i++) {
+                    encriptedString += key
+                }
+
+                if (char !== ' ') {
+                    encriptedString += '-';
+                } else {
+                    encriptedString = encriptedString.substring(0, encriptedString.length-1);
+                    encriptedString += ' ';
+                }
+                
+
+            });
+
+            encriptedString = encriptedString.substring(0, encriptedString.length-1);
+
+            return encriptedString;
+
+        }
+        // END OF FUNCTIONS
+        
+        
+        // MAIN PROGRAM LOGIC
+        
+
+        // INITIALIZE AND GET THE STRING TO ENCRYPT
+        // const originalStringToEncript = prompt('Insert a message only with\nsimple letters separated by spaces:');
+
+        // let stringToEncript = originalStringToEncript || '';
+
+        // stringToEncript = replaceNonAsciiCharacters(stringToEncript);
+
+        // const screenMessageLine = '|YOU\'VE GOT MAIL!|';
+        const screenMessageLine = '|   🖂 TO RGDS   |';
+
+        document.getElementById('clues_and_message').innerHTML = initializeCellPhoneStr(screenMessageLine);
+
+        retroCellphoneEncription( stringToEncript ).split(' ').forEach( (word) => {
+            document.getElementById('encrypted').innerHTML += '<p>'+ word + '</p>'
+        });
+
+        html2canvas(document.querySelector("#clues_and_message")).then(canvas => {
+            canvas.title = `Image for the encrypted message from:\n${originalStringToEncript}`;
+            document.body.appendChild(canvas)
+        });
+
+        document.getElementById('clues_and_message').style.display = 'none';
+
+    </script>
+    
+</body>
+</html>
