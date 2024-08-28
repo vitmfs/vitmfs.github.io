@@ -1,252 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
 
-    <style>
-        .stop-scrolling {
-            height: 100%;
-            overflow: hidden;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+         <!-- Styles -->
+        <link rel="stylesheet" href="https://cdn.metroui.org.ua/current/metro.css">
+        <!-- Icons -->                    
+        <link rel="stylesheet" href="https://cdn.metroui.org.ua/current/icons.css">
+                    
 
-        .input-left-align { 
-            text-align: left; 
-        }
-    
-        .input-right-align { 
-            text-align: right; 
-        }
+        <style>
+            .stop-scrolling {
+                height: 100%;
+                overflow: hidden;
+            }
 
-    </style>
-    
-</head>
-<body>
+            .input-left-align { 
+                text-align: left; 
+            }
+        
+            .input-right-align { 
+                text-align: right; 
+            }
 
-    <div
-        id="chat_window"
-        data-role="chat"
-        data-width="100%"
-        data-height="100%"
-        data-name="Vitor Silva"
-        data-avatar="https://www.mediafire.com/convkey/1b08/6m9lvf26si1tbu97g.jpg"
-        data-welcome="Hello and welcome to the interview never stops simulation! 💡"
-        data-title="The Interview Never Stops!"
-        data-random-color="true"
+            .button, .input-custom-button {
+                display: none;
+            }
 
-    >
+            .title {
+                font-weight: 600;
+            }
 
+            .message-text {
+                border-radius: 12px;
+            }
 
-    </div>
+            #chat_window {
+                padding: 2%;
+            }
+        </style>
+        
+    </head>
 
+    <body>
 
-    
+        <div
+            id="chat_window"
+            data-role="chat"
+            data-width="100%"
+            data-height="100%"
+            data-name="Vitor Silva"
+            data-avatar="https://www.mediafire.com/convkey/1b08/6m9lvf26si1tbu97g.jpg"
+            data-welcome="Hello and welcome to the interview never stops simulation! 💡"
+            data-title="Interview Simulation Demo"
+            data-random-color="true"
 
-
-<script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
-<script>
-
-    const companyBehaviorQuestionsEng = [
-        {
-            question: "Why do you want to work here?",
-            answer: "I want to work here because..."
-        },
-        {
-            question: "In your opinion, what value can you bring to the company?",
-            answer: "I can help the company in the following ways..."
-        },
-        {
-            question: "What kind of person are you? Will you fit in?",
-            answer: "Well, my most prevalent characteristics are..."
-        },
-        {
-            question: "What makes you different from the competition?",
-            answer: "My versatility and willingness to learn..."
-        },
-        {
-            question: "Will you leave at the first opportunity?",
-            answer: "My history shows that..."
-        }
-    ];
-    const myQuestionsToTheCompany = [
-        {
-            question: "Why do I want to work here?",
-            answer: "Because..."
-        },
-        {
-            question: "What do I need to know to do this job well?",
-            answer: "You will need to..."
-        },
-        {
-            question: "Would I like to work with the people that work here?",
-            answer: "Well..."
-        },
-        {
-            question: "What will make stand out from the competition so that the company makes me an offer?",
-            answer: "Well..."
-        },
-        {
-            question: "What are the perks of working for this company?",
-            answer: "Well..."
-        },
-        {
-            question: "What kinds of projects are going on right now?",
-            answer: "Well..."
-        },
-        {
-            question: "Can you tell me what the people who work here say about this company?",
-            answer: "Well..."
-        },
-        {
-            question: "What would you say are the biggest challenges for this industry right now?",
-            answer: "Well..."
-        },
-        {
-            question: "How do you go about finding the people that you wish to hire?",
-            answer: "Well..."
-        },
-        {
-            question: "What kind of mood are people in when they leave work at the end of a shift?",
-            answer: "Well..."
-        },
-        {
-            question: "Are there special courses or trining that help people to be considered for positions here?",
-            answer: "Well..."
-        },
-        {
-            question: "Is it possible for someone with my background to be considered for positions here?",
-            answer: "Well..."
-        },
-        {
-            question: "If not, what you would suggest is a good developmental step for me?",
-            answer: "Well..."
-        }
+        >
+        </div>
 
 
-
-    ];
-    
-    
-    const myName = "Vítor Silva";
-    const firstInterviewer = "Interviewer";
-    let inLeftPosition = false;
-    let i = 0;
-    let subjects = [
-    {
-            id: 2,
-            name: myName,
-            time: Date.now(),
-            avatar: "https://www.mediafire.com/convkey/1b08/6m9lvf26si1tbu97g.jpg",
-            position: "right",
-            message: companyBehaviorQuestionsEng[i].answer
-        },
-        {
-            id: 1,
-            name: firstInterviewer,
-            time: Date.now(),
-            avatar: "https://www.mediafire.com/convkey/6b14/or57r1bjtz6mew57g.jpg",
-            position: "left",
-            message: companyBehaviorQuestionsEng[i].question
-        }
         
 
-    ];
-    const chat_window = document.getElementById('chat_window');
+
+        <script src="https://cdn.metroui.org.ua/current/metro.js"></script>  
+        <script>
+
+            const companyBehaviorQuestionsEng = [
+                {
+                    question: "Why do you want to work here?",
+                    answer: "I want to work here because..."
+                },
+                {
+                    question: "In your opinion, what value can you bring to the company?",
+                    answer: "I can help the company in the following ways..."
+                },
+                {
+                    question: "What kind of person are you? Will you fit in?",
+                    answer: "Well, my most prevalent characteristics are..."
+                },
+                {
+                    question: "What makes you different from the competition?",
+                    answer: "My versatility and willingness to learn..."
+                },
+                {
+                    question: "Will you leave at the first opportunity?",
+                    answer: "My history shows that..."
+                }
+            ];
+            const myQuestionsToTheCompany = [
+                {
+                    question: "Why do I want to work here?",
+                    answer: "Because..."
+                },
+                {
+                    question: "What do I need to know to do this job well?",
+                    answer: "You will need to..."
+                },
+                {
+                    question: "Would I like to work with the people that work here?",
+                    answer: "Well..."
+                },
+                {
+                    question: "What will make stand out from the competition so that the company makes me an offer?",
+                    answer: "Well..."
+                },
+                {
+                    question: "What are the perks of working for this company?",
+                    answer: "Well..."
+                },
+                {
+                    question: "What kinds of projects are going on right now?",
+                    answer: "Well..."
+                },
+                {
+                    question: "Can you tell me what the people who work here say about this company?",
+                    answer: "Well..."
+                },
+                {
+                    question: "What would you say are the biggest challenges for this industry right now?",
+                    answer: "Well..."
+                },
+                {
+                    question: "How do you go about finding the people that you wish to hire?",
+                    answer: "Well..."
+                },
+                {
+                    question: "What kind of mood are people in when they leave work at the end of a shift?",
+                    answer: "Well..."
+                },
+                {
+                    question: "Are there special courses or trining that help people to be considered for positions here?",
+                    answer: "Well..."
+                },
+                {
+                    question: "Is it possible for someone with my background to be considered for positions here?",
+                    answer: "Well..."
+                },
+                {
+                    question: "If not, what you would suggest is a good developmental step for me?",
+                    answer: "Well..."
+                }
 
 
 
-    let messageIndex = 0;
-    let messageId = 0;
-    let rightAligned = false;
-    let isInterviewer = true;
-    let hold = true;
-    
-
-
-    setInterval(() => {
-
-
-        const lengthOfQuestions = companyBehaviorQuestionsEng.length;
-
-        const personSpeaking = (rightAligned) ? subjects[0] : subjects[1];
-        personSpeaking.message = (isInterviewer) ? companyBehaviorQuestionsEng[messageIndex].question : companyBehaviorQuestionsEng[messageIndex].answer;
-        personSpeaking.position = (isInterviewer) ? 'left' : 'right';
-
-        isInterviewer = !isInterviewer;
-
-        let messageTextInput = document.getElementsByTagName('input')[0];
-
-
-        let indexOfLetter = 0;
-        const typingInterval = setInterval(() => {
+            ];
             
-            if (indexOfLetter === 0) {
-                messageTextInput.value = '';
+            
+            const myName = "Vítor Silva";
+            const firstInterviewer = "HR Interviewer AKA Inquisition";
+            let inLeftPosition = false;
+            let i = 0;
+            let subjects = [
+            {
+                    id: 2,
+                    name: myName,
+                    time: Date.now(),
+                    avatar: "https://www.mediafire.com/convkey/1b08/6m9lvf26si1tbu97g.jpg",
+                    position: "right",
+                    message: companyBehaviorQuestionsEng[i].answer
+                },
+                {
+                    id: 1,
+                    name: firstInterviewer,
+                    time: Date.now(),
+                    avatar: "https://www.mediafire.com/convkey/6b14/or57r1bjtz6mew57g.jpg",
+                    position: "left",
+                    message: companyBehaviorQuestionsEng[i].question
+                }
                 
-            }
-            messageTextInput.value = messageTextInput.value + personSpeaking.message[indexOfLetter];
-            indexOfLetter++;
 
-            if (indexOfLetter === personSpeaking.message.length) {
-                clearInterval(typingInterval);
-                indexOfLetter = 0;
-            }
+            ];
+            const chat_window = document.getElementById('chat_window');
+
+
+
+            let messageIndex = 0;
+            let messageId = 0;
+            let rightAligned = false;
+            let isInterviewer = true;
+            let hold = true;
             
-        }, 25);
 
+
+            setInterval(() => {
+
+
+                const lengthOfQuestions = companyBehaviorQuestionsEng.length;
+
+                const personSpeaking = (rightAligned) ? subjects[0] : subjects[1];
+                personSpeaking.message = (isInterviewer) ? companyBehaviorQuestionsEng[messageIndex].question : companyBehaviorQuestionsEng[messageIndex].answer;
+                personSpeaking.position = (isInterviewer) ? 'left' : 'right';
+
+                isInterviewer = !isInterviewer;
+
+                let messageTextInput = document.getElementsByTagName('input')[0];
+
+
+                let indexOfLetter = 0;
+                const typingInterval = setInterval(() => {
+                    
+                    if (indexOfLetter === 0) {
+                        messageTextInput.value = '';
+                        
+                    }
+                    messageTextInput.value = messageTextInput.value + personSpeaking.message[indexOfLetter];
+                    indexOfLetter++;
+
+                    if (indexOfLetter === personSpeaking.message.length) {
+                        clearInterval(typingInterval);
+                        indexOfLetter = 0;
+                    }
+                    
+                }, 25);
+
+                
+
+
+                
+
+
+                document.getElementsByClassName('messages')[0].innerHTML += `<div class="message ${personSpeaking.position}" id="chat-message-1648721838090251"><div class="message-item"><img src="${personSpeaking.avatar}" class="message-avatar"><div class="message-text default"><div class="message-text-inner">${personSpeaking.message}</div><div class="message-time">${new Date().getDate()} ${new Date().getMonth()+1} ${new Date().getHours()}:${new Date().getMinutes()}</div><div class="message-sender">${personSpeaking.name}</div></div></div>`;
+                document.getElementsByClassName('messages')[0].scrollBy(0,180);
+
+                window.scrollBy(0,180);
+
+                
+                messageTextInput.value = '';
+
+                if (rightAligned) {
+                    messageTextInput.classList.remove('input-left-align');
+                    messageTextInput.classList.add('input-right-align');
+                } else {
+                    messageTextInput.classList.remove('input-right-align');
+                    messageTextInput.classList.add('input-left-align');
+                }
+                rightAligned = !rightAligned;
+
+                if (messageTextInput.value.includes('undefined')) {
+                    messageTextInput.value = '';
+                }
+
+                document.querySelectorAll('button')[0].disabled = true;
+
+                if (!hold) {
+                    messageIndex++;
+                }
+                hold = !hold;
+                
+                if (messageIndex === companyBehaviorQuestionsEng.length) {
+                    messageIndex = 0;
+                }
+
+                const inputs = document.getElementsByTagName("input");
+
+                for (let eachInput of inputs) {
+                    eachInput.readOnly = true;
+                }
+
+            }, 5000);
+
+            
+
+
+        </script>
+
+
+        <script>
+            document.body.classList.add('stop-scrolling');
+
+            
+
+        </script>
         
-
-
-        
-
-
-        document.getElementsByClassName('messages')[0].innerHTML += `<div class="message ${personSpeaking.position}" id="chat-message-1648721838090251"><div class="message-item"><img src="${personSpeaking.avatar}" class="message-avatar"><div class="message-text default"><div class="message-text-inner">${personSpeaking.message}</div><div class="message-time">${new Date().getDay()} ${new Date().getMonth()} ${new Date().getHours()}:${new Date().getMinutes()} AM</div><div class="message-sender">${personSpeaking.name}</div></div></div>`;
-        document.getElementsByClassName('messages')[0].scrollBy(0,180);
-
-        window.scrollBy(0,180);
-
-        
-        messageTextInput.value = '';
-
-        if (rightAligned) {
-            messageTextInput.classList.remove('input-left-align');
-            messageTextInput.classList.add('input-right-align');
-        } else {
-            messageTextInput.classList.remove('input-right-align');
-            messageTextInput.classList.add('input-left-align');
-        }
-        rightAligned = !rightAligned;
-
-        if (messageTextInput.value.includes('undefined')) {
-            messageTextInput.value = '';
-        }
-
-        document.querySelectorAll('button')[0].disabled = true;
-
-        if (!hold) {
-            messageIndex++;
-        }
-        hold = !hold;
-        
-        if (messageIndex === companyBehaviorQuestionsEng.length) {
-            messageIndex = 0;
-        }
-
-    }, 5000);
-
-    
-
-
-</script>
-
-
-<script>
-    document.body.classList.add('stop-scrolling');
-
-</script>
-    
-</body>
+    </body>
 </html>
